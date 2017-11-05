@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+$selector: 's-info';
+
+.#{$selector} {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 57px);
+    justify-content: center;
+    text-align: center;
+    &_logo {
+        display: block;
+        margin-bottom: 1rem;
+    }
+    &_position {
+        position: relative;
+        &::before {
+            background: {
+                color: #191919;
+            }
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            z-index: -1;
+        }
+        &_text {
+            background: {
+                color: #fff;
+            }
+            font: {
+                size: 1em;
+                weight: 600;
+            }
+            letter-spacing: .3rem;
+            padding: {
+                left: 1rem;
+                right: 1rem;
+            }
+            text-transform: uppercase;
+        }
+    }
+    &_name {
+        font: {
+            family: $secondary-font;
+            size: 5rem;
+            weight: 300;
+        }
+        line-height: 6rem;
+        margin: {
+            bottom: 2rem;
+            top: 2rem;
+        }
+        text-transform: uppercase;
+    }
+    &_contact {
+        margin-top: 2rem;
+        &_list {
+            display: flex;
+            justify-content: center;
+            &_item {
+                margin-left: 1rem;
+                margin-right: 1rem;
+                &_link {
+                    &_image {
+                        &.icon {
+                            &-github {
+                                fill: #191919;
+                                height: 60px;
+                                transition: all .15s ease;
+                                width: 60px;
+                                &:hover {
+                                    fill: #ed1358;
+                                }
+                            }
+                            &-linkedin {
+                                fill: #191919;
+                                height: 60px;
+                                transition: all .15s ease;
+                                width: 60px;
+                                &:hover {
+                                    fill: #ed1358;
+                                }
+                            }
+                            &-mail {
+                                fill: #191919;
+                                height: 60px;
+                                transition: all .15s ease;
+                                width: 60px;
+                                &:hover {
+                                    fill: #ed1358;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

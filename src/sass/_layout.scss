@@ -1,0 +1,122 @@
+@charset 'utf-8';
+
+%container {
+    padding: {
+        left: 16px;
+        right: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+        margin: {
+            left: auto;
+            right: auto;
+        }
+        width: 1024px;
+    }
+}
+
+.navigation {
+    background: {
+        color: #191919;
+    }
+    display: block;
+    padding: {
+        bottom: 1rem;
+        top: 1rem;
+    }
+    &_wrapper {
+        @extend %container;
+        &_list {
+            display: flex;
+            justify-content: flex-end;
+            &_item {
+                margin-left: 2.5rem;
+                &_link {
+                    color: #f1f1f1;
+                    font: {
+                        family: "Roboto Condensed", sans-serif;
+                        size: 1em;
+                    }
+                    text: {
+                        decoration: none;
+                        transform: uppercase;
+                    }
+                    transition: color .15s ease;
+                    &:hover {
+                        color: #cccbcb;
+                    }
+                    &_heart {
+                        color: #ff0090;
+                        font: {
+                            size: .8rem;
+                        }
+                        margin: {
+                            left: .2rem;
+                        }
+                        vertical-align: top;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content {
+    &_container {
+        @extend %container;
+    }
+}
+
+.s-box {
+    margin-top: 2rem;
+    &::before {
+        background: {
+            color: #cccbcb;
+        }
+        content: '';
+        display: block;
+        height: 1px;
+        margin: {
+            bottom: 3rem;
+            left: auto;
+            right: auto;
+        }
+        width: 100px;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        &_col {
+            width: 45%;
+        }
+    }
+}
+
+.footer {
+    padding: {
+        bottom: 1rem;
+        top: 3rem;
+    }
+    text-align: right;
+    &_container {
+        @extend %container;
+        &_text {
+            color: #bfbdbd;
+            font: {
+                size: .8rem;
+                style: italic;
+            }
+            &_link {
+                color: $link-color;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    color: $link-hover-color;
+                    text-decoration: none;
+                }
+                &:visited {
+                    color: $link-visited-color;
+                }
+            }
+        }
+    }
+}
+

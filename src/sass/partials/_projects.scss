@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+$selector: 's-projects';
+
+.#{$selector} {
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        &_item {
+            margin: {
+                bottom: 1rem;
+            }
+            width: 47%;
+            &_link {
+                box-shadow: 0 2px 2px #ccc;
+                display: flex;
+                text-decoration: none;
+                &:hover {
+                    color: #660b0b;
+                }
+                &_details {
+                    padding: {
+                        bottom: 1rem;
+                        left: 1rem;
+                        right: 2rem;
+                        top: 1rem;
+                    }
+                    &_name {
+                        color: #191919;
+                        display: block;
+                        font: {
+                            weight: bold;
+                        }
+                        margin: {
+                            bottom: .4rem;
+                        }
+                        .#{$selector}_list_item_link:hover & {
+                            color: #ed1358;
+                        }
+                    }
+                    &_task {
+                        display: block;
+                        color: #aeacac;
+                        font: {
+                            weight: 600;
+                        }
+                    }
+                    &_date {
+                        display: block;
+                        color: #aeacac;
+                        font: {
+                            size: .8rem;
+                        }
+                    }
+                }
+                &_preview {
+                    &_image {
+                        display: block;
+                        max-width: 100%;
+                        transition: filter .2s ease;
+                        .#{$selector}_list_item_link:hover & {
+                            filter: grayscale(50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
