@@ -1,155 +1,155 @@
 <?php
     $projects = [
         [
-            'name'  => 'Dívány.hu',
-            'image' => '',
+            'name'  => 'Dívány.hu redesign',
+            'image' => 'divany.png',
             'task'  => 'Front-end development, management',
             'date'  => '2017',
             'url'   => 'http://divany.hu'
         ],
         [
             'name'  => 'Index.hu - FINA World Championships 2017',
-            'image' => '',
+            'image' => 'index.png',
             'task'  => 'Front-end development, management',
             'date'  => '2017',
             'url'   => 'http://index.hu/sport/2017/fina_vizesvb_budapest/'
         ],
         [
             'name'  => 'Index.hu - Miniredesign 2016: Folders',
-            'image' => '',
+            'image' => 'index.png',
             'task'  => 'Front-end development',
             'date'  => '2016',
             'url'   => 'http://index.hu/aktak'
         ],
         [
             'name'  => 'Index.hu - Miniredesign 2016: Headings',
-            'image' => '',
+            'image' => 'index.png',
             'task'  => 'Front-end development',
             'date'  => '2016',
             'url'   => 'http://index.hu/rovatok'
         ],
         [
             'name'  => 'Index.hu - Olympic Games Rio 2016',
-            'image' => '',
+            'image' => 'index.png',
             'task'  => 'Front-end development',
             'date'  => '2016',
             'url'   => 'http://index.hu/sport/2016/rio/'
         ],
         [
             'name'  => 'Index.hu - EURO 2016',
-            'image' => '',
+            'image' => 'index.png',
             'task'  => 'Front-end development',
             'date'  => '2016',
             'url'   => 'http://index.hu/sport/futball/2016/eb'
         ],
         [
             'name'  => 'Blog.hu dashboard',
-            'image' => '',
+            'image' => 'bloghu.png',
             'task'  => 'Front-end development, management',
             'date'  => '2015',
             'url'   => 'http://blog.hu/dashboard'
         ],
         [
             'name'  => 'Yog Sadhna',
-            'image' => '',
+            'image' => 'yogsadhna.png',
             'task'  => 'Front-end development',
             'date'  => '2015',
             'url'   => 'https://www.yogsadhna.com/'
         ],
         [
             'name'  => 'Magistral',
-            'image' => '',
+            'image' => 'magistral.png',
             'task'  => 'Front-end development, management',
             'date'  => '2015',
             'url'   => 'http://magistral.hu'
         ],
         [
             'name'  => 'Kettős Mérce blog',
-            'image' => '',
+            'image' => 'merce.png',
             'task'  => 'Front-end development',
             'date'  => '2015',
             'url'   => 'http://kettosmerce.blog.hu'
         ],
         [
             'name'  => 'Blog.hu',
-            'image' => '',
+            'image' => 'bloghu.png',
             'task'  => 'Front-end development, management',
             'date'  => '2014',
             'url'   => 'http://blog.hu'
         ],
         [
             'name'  => 'Manzárd Café',
-            'image' => '',
+            'image' => 'manzard.png',
             'task'  => 'Front-end development',
             'date'  => '2014',
             'url'   => 'http://manzardcafe.blog.hu/'
         ],
         [
             'name'  => 'Street Kitchen',
-            'image' => '',
+            'image' => 'sk.png',
             'task'  => 'Front-end development',
             'date'  => '2014',
             'url'   => 'http://streetkitchen.hu'
         ],
         [
             'name'  => 'Hogy volt? blog',
-            'image' => '',
+            'image' => 'hogyvolt.png',
             'task'  => 'Front-end development',
             'date'  => '2014',
             'url'   => 'http://hogyvolt.blog.hu'
         ],
         [
             'name'  => 'Creative Ads',
-            'image' => '',
+            'image' => 'ca.png',
             'task'  => 'Front-end development',
             'date'  => '2014',
             'url'   => 'http://creativeads.blog.hu'
         ],
         [
             'name'  => 'Zöld Pardon',
-            'image' => '',
+            'image' => 'zp.png',
             'task'  => 'Front-end development, management',
             'date'  => '2013',
             'url'   => 'http://www.zp.hu'
         ],
         [
             'name'  => 'SecreTease - Alma Pirner\'s webshop',
-            'image' => '',
+            'image' => 'secretease.png',
             'task'  => 'Front-end development, design, logo',
             'date'  => '2012',
             'url'   => 'http://secretease.hu'
         ],
         [
             'name'  => 'Dollhouse webshop',
-            'image' => '',
+            'image' => 'secretease.png',
             'task'  => 'Front-end development, design',
             'date'  => '2012',
             'url'   => 'https://shop.dollhouse.hu/'
         ],
         [
             'name'  => 'Alma Pirner\'s portfolio',
-            'image' => '',
+            'image' => 'almapirner.png',
             'task'  => 'Front-end development, design, logo',
             'date'  => '2012',
             'url'   => 'http://pirneralma.hu'
         ],
         [
             'name'  => 'La femme',
-            'image' => '',
+            'image' => 'lafemme.png',
             'task'  => 'Sitebuild',
             'date'  => '2011',
             'url'   => 'http://lafemme.hu'
         ],
         [
             'name'  => 'Verlon webshop',
-            'image' => '',
+            'image' => 'verlon.png',
             'task'  => 'Sitebuild',
             'date'  => '2011',
             'url'   => 'http://verlon.hu'
         ],
         [
             'name'  => 'Wellness Centrum',
-            'image' => '',
+            'image' => 'welness.png',
             'task'  => 'Sitebuild',
             'date'  => '2011',
             'url'   => 'http://wellnesscentrum.hu'
@@ -157,7 +157,7 @@
     ];
 ?>
 
-<section class="s-box s-projects">
+<section class="s-box s-projects" id="projects">
     <div class="s-box_wrapper">
         <ul class="s-projects_list">
             <?php

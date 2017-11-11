@@ -4,20 +4,52 @@ $selector: 's-skills';
 
 .#{$selector} {
     &_list {
-        &_item {
-            align-items: center;
+        width: 100%;
+        @media screen and (min-width: 1024px) {
             display: flex;
-            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &_item {
+            margin: {
+                bottom: 1.5rem;
+            }
+            @media screen and (min-width: 1024px) {
+                align-items: center;
+                display: flex;
+                width: 45%;
+            }
+            @media screen and (min-width: 1024px) {
+                &:nth-child(odd) {
+                    margin: {
+                        right: 1rem;
+                    }
+                }
+            }
             &_label {
                 font-weight: 700;
-                width: 165px;
+                @media screen and (min-width: 1024px) {
+                    width: 60%;
+                }
             }
             &_status {
-                background-color: #cccbcb;
+                background: {
+                    color: #cccbcb;
+                }
                 height: 5px;
+                margin: {
+                    top: .375rem;
+                }
                 width: 100%;
+                @media screen and (min-width: 1024px) {
+                    margin: {
+                        top: 0;
+                    }
+                }
                 &_progress {
-                    background-color: #191919;
+                    background: {
+                        color: #191919;
+                    }
                     display: block;
                     height: 5px;
                     .width-10 & {

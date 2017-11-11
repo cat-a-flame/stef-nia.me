@@ -3,6 +3,10 @@
 $link-color: #ed1b7b;
 $link-hover-color: darken(#ed1b7b, 10%);
 $link-visited-color: #9c2a5e;
+$light-grey: #8f8585;
+$light-grey2: #cccbcb;
+$light-grey3: #ccc;
+$dark-grey: #2d2d2d;
 $base-font: 'Open Sans', serif;
 $secondary-font: 'Playfair Display', serif;
 $navigation-font: 'Roboto Condensed', sans-serif;
@@ -15,7 +19,7 @@ body {
     background: {
         color: #fff;
     }
-    color: #2d2d2d;
+    color: $dark-grey;
     font: {
         family: $base-font;
         size: 16px;

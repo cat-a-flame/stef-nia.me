@@ -5,13 +5,17 @@
   "scripts": {
     "scss": "node-sass --include-path / --output-style compressed -o dist/css src/sass",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "prefix": "npm run scss && npm run autoprefixer"
+    "js": "uglifyjs node_modules/jquery/dist/jquery.js dist/js/navigation.js -o dist/js/main.js",
+    "prefix": "npm run scss && npm run autoprefixer",
+    "build": "npm run scss && npm run autoprefixer && npm run js"
   },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.6",
+    "jquery": "^3.2.1",
     "node-sass": "^4.6.0",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "uglify-js": "^3.1.9"
   },
   "browserslist": [
     "> 1%",

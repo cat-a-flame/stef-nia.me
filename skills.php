@@ -1,72 +1,63 @@
-<section class="s-box s-skills">
+<?php
+    $skills = [
+        [
+            'skill'   => 'CSS',
+            'percent' => '90'
+        ],
+        [
+            'skill'   => 'HTML',
+            'percent' => '90'
+        ],
+        [
+            'skill'   => 'JavaScript',
+            'percent' => '40'
+        ],
+        [
+            'skill'   => 'Accessibility',
+            'percent' => '90'
+        ],
+        [
+            'skill'   => 'Sass',
+            'percent' => '80'
+        ],
+        [
+            'skill'   => 'Git',
+            'percent' => '60'
+        ],
+        [
+            'skill'   => 'Github',
+            'percent' => '70'
+        ],
+        [
+            'skill'   => 'Responsive design',
+            'percent' => '90'
+        ],
+        [
+            'skill'   => 'UI development',
+            'percent' => '80'
+        ],
+        [
+            'skill'   => 'Photoshop',
+            'percent' => '50'
+        ]
+    ];
+?>
+
+<section class="s-box s-skills" id="skills">
     <div class="s-box_wrapper">
-        <div class="s-box_wrapper_col">
-            <ul class="s-skills_list">
+        <ul class="s-skills_list">
+            <?php
+                foreach ($skills as $skill) {
+            ?>
                 <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">CSS</span>
-                    <div class="s-skills_list_item_status width-90">
+                    <span class="s-skills_list_item_label"><?= $skill['skill']; ?></span>
+                    <div class="s-skills_list_item_status width-<?= $skill['percent']; ?>">
                         <span class="s-skills_list_item_status_progress"></span>
                     </div>
                 </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">HTML</span>
-                    <div class="s-skills_list_item_status width-90">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Sass</span>
-                    <div class="s-skills_list_item_status width-80">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">JavaScript</span>
-                    <div class="s-skills_list_item_status width-40">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Git</span>
-                    <div class="s-skills_list_item_status width-60">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="s-box_wrapper_col">
-            <ul class="s-skills_list">
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Illustrator</span>
-                    <div class="s-skills_list_item_status width-40">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Photoshop</span>
-                    <div class="s-skills_list_item_status width-50">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">UI design</span>
-                    <div class="s-skills_list_item_status width-50">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Sublime Text</span>
-                    <div class="s-skills_list_item_status width-60">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-                <li class="s-skills_list_item">
-                    <span class="s-skills_list_item_label">Photography</span>
-                    <div class="s-skills_list_item_status width-70">
-                        <span class="s-skills_list_item_status_progress"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <?php
+                }
+            ?>
+        </ul>
     </div>
 </section>
