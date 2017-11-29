@@ -1,0 +1,98 @@
+@charset 'utf-8';
+
+$card-bg-color: #fbf7f7;
+$card-bg-hover-color: #f5f1f1;
+$card-shadow-color: #c5c3c3;
+
+$selector: 's-projects';
+
+.#{$selector} {
+    &_list {
+        width: 100%;
+        @media screen and (min-width: 700px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &_item {
+            margin: {
+                bottom: 1rem;
+            }
+            @media screen and (min-width: 700px) {
+                width: 47%;
+            }
+            &_link {
+                align-items: center;
+                background: {
+                    color: $card-bg-color;
+                }
+                box-shadow: 0 2px 2px $card-shadow-color;
+                display: flex;
+                height: 100%;
+                text-decoration: none;
+                &:hover {
+                    background: {
+                        color: $card-bg-hover-color;
+                    }
+                    color: $link-hover-color;
+                }
+                &:focus {
+                    outline: 1px solid $link-hover-color;
+                }
+                &_details {
+                    padding: {
+                        bottom: 1rem;
+                        left: 1rem;
+                        right: 2rem;
+                        top: 1rem;
+                    }
+                    &_name {
+                        color: $dark-grey;
+                        display: block;
+                        font: {
+                            weight: bold;
+                        }
+                        margin: {
+                            bottom: .4rem;
+                        }
+                        .#{$selector}_list_item_link:hover &, .#{$selector}_list_item_link:focus & {
+                            color: $link-hover-color;
+                        }
+                    }
+                    &_task {
+                        display: block;
+                        color: $light-grey;
+                        font: {
+                            weight: 600;
+                        }
+                        margin: {
+                            bottom: .375rem;
+                        }
+                    }
+                    &_date {
+                        display: block;
+                        color: $light-grey;
+                        font: {
+                            size: .8rem;
+                        }
+                    }
+                }
+                &_preview {
+                    display: none;
+                    @media screen and (min-width: 450px) {
+                        display: block;
+                        width: 25%;
+                    }
+                    &_image {
+                        display: block;
+                        width: 100%;
+                        transition: filter .2s ease;
+                        .#{$selector}_list_item_link:hover &, .#{$selector}_list_item_link:focus & {
+                            filter: grayscale(80%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
