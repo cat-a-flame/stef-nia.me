@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <base href="/">
     <title>Stefánia Péter / Pixel forger / Cat lover</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4677027-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-4677027-3');
+    </script>
     <meta name="author" content="Stefánia Péter"/>
     <meta name="description" content="Portfolio of Stefánia Péter"/>
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
