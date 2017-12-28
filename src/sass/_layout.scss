@@ -126,10 +126,6 @@
                         color: $light-grey2;
                         outline: 1px dotted $light-grey2;
                     }
-                    &.stateActive {
-                        color: $light-grey2;
-                        text-decoration: underline;
-                    }
                     &_heart {
                         color: $link-color;
                         font: {

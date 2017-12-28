@@ -2,7 +2,7 @@
     <nav class="navigation_wrapper">
         <ul class="navigation_wrapper_list" data-toggle="menu">
             <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link stateActive" href="#about">About</a>
+                <a class="navigation_wrapper_list_item_link" href="#about">About</a>
             </li>
             <li class="navigation_wrapper_list_item">
                 <a class="navigation_wrapper_list_item_link" href="#skills">Skills</a>
