@@ -11,6 +11,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-4677027-3');
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Stefánia Péter"/>
     <meta name="description" content="Portfolio of Stefánia Péter"/>
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
