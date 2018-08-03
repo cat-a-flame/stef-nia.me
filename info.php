@@ -12,7 +12,7 @@
             I'm a front-end developer from Budapest, Hungary, who fell in love with coding in 2004. My main interests are CSS, HTML, and focusing on accessibility.
             Currently I work at <strong class="s-info_description_highlight">Oracle Hungary</strong> and on several side projects which interest me.
             I also love to try out new technologies, meet new people and share our thoughts.<br><br>
-            If I'm not digging myself into <del>buggy</del> code, I read, draw, watching TV series, playing video games or just code a little bit more, 'cause my job is my hobby as well.<br><br>
+            When I'm not digging into <del>buggy</del> code, I read, draw, watch TV series, play video games or work on side projects, because what I do for a living is also my hobby.<br><br>
             <strong class="s-info_description_highlight">We must never forget the main purpose of the world wide web.</strong>
         </p>
 
