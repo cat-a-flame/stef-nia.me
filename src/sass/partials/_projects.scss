@@ -76,11 +76,12 @@ $selector: 's-projects';
             }
             &_position {
                 display: block;
+                font-size: .85rem;
             }
             &_date {
                 color: $light-grey;
                 display: block;
-                font-size: .8rem;
+                font-size: .85rem;
             }
         }
     }
@@ -97,6 +98,7 @@ $selector: 's-projects';
             }
             &_name {
                 color: $link-color;
+                font-size: .85rem;
                 text-decoration: underline;
                 &:hover, &:focus {
                     color: $link-hover-color;
@@ -108,7 +110,7 @@ $selector: 's-projects';
             }
             &_date {
                 color: $light-grey;
-                font-size: .8rem;
+                font-size: .85rem;
             }
         }
     }
