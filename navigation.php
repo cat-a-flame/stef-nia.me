@@ -8,7 +8,7 @@
                 <a class="navigation_wrapper_list_item_link" href="#skills">Skills</a>
             </li>
             <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link" href="#projects">Projects</a>
+                <a class="navigation_wrapper_list_item_link" href="#projects">Experiences</a>
             </li>
             <li class="navigation_wrapper_list_item">
                 <a class="navigation_wrapper_list_item_link" href="/koken" rel="external" target="_blank">Photos<sup class="navigation_wrapper_list_item_link_heart">❤</sup></a>

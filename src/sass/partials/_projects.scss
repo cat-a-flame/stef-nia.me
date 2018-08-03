@@ -7,91 +7,108 @@ $card-shadow-color: #c5c3c3;
 $selector: 's-projects';
 
 .#{$selector} {
-    &_list {
+    &_col {
         width: 100%;
-        @media screen and (min-width: 700px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        &_item {
+        &:not(:last-child) {
             margin: {
-                bottom: 1rem;
+                bottom: 2rem;
+            }
+        }
+        @media screen and (min-width: 700px) {
+            width: 50%;
+            &:not(:last-child) {
+                margin: {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    &_title {
+        font-weight: 700;
+        margin: {
+            bottom: 1rem;
+        }
+    }
+    &_list {
+        &_item {
+            @media screen and (max-width: 699px) {
+                border: {
+                    bottom-color: $dark-grey;
+                    bottom-style: solid;
+                    bottom-width: 1px;
+                }
+                padding: {
+                    bottom: 1rem;
+                }
             }
             @media screen and (min-width: 700px) {
-                width: 47%;
+                border: {
+                    left-color: $dark-grey;
+                    left-style: solid;
+                    left-width: 2px;
+                }
+                padding: {
+                    left: 1rem;
+                }
             }
-            &_link {
-                align-items: center;
-                background: {
-                    color: $card-bg-color;
+            &:not(:last-child) {
+                margin: {
+                    bottom: 1rem;
                 }
-                box-shadow: 0 2px 2px $card-shadow-color;
-                display: flex;
-                height: 100%;
-                text-decoration: none;
-                &:hover {
-                    background: {
-                        color: $card-bg-hover-color;
+                @media screen and (min-width: 700px) {
+                    margin: {
+                        bottom: 2rem;
                     }
+                }
+            }
+            &_name {
+                color: $link-color;
+                display: block;
+                font-weight: 700;
+                text-decoration: underline;
+                &:hover, &:focus {
                     color: $link-hover-color;
+                    text-decoration: none;
                 }
-                &:focus {
-                    outline: 1px solid $link-hover-color;
+                &:visited {
+                    color: $link-visited-color;
                 }
-                &_details {
-                    padding: {
-                        bottom: 1rem;
-                        left: 1rem;
-                        right: 2rem;
-                        top: 1rem;
-                    }
-                    &_name {
-                        color: $dark-grey;
-                        display: block;
-                        font: {
-                            weight: bold;
-                        }
-                        margin: {
-                            bottom: .4rem;
-                        }
-                        .#{$selector}_list_item_link:hover &, .#{$selector}_list_item_link:focus & {
-                            color: $link-hover-color;
-                        }
-                    }
-                    &_task {
-                        display: block;
-                        color: $light-grey;
-                        font: {
-                            weight: 600;
-                        }
-                        margin: {
-                            bottom: .375rem;
-                        }
-                    }
-                    &_date {
-                        display: block;
-                        color: $light-grey;
-                        font: {
-                            size: .8rem;
-                        }
-                    }
+            }
+            &_position {
+                display: block;
+            }
+            &_date {
+                color: $light-grey;
+                display: block;
+                font-size: .8rem;
+            }
+        }
+    }
+    &_sublist {
+        margin: {
+            left: .5rem;
+            top: 1rem;
+        }
+        &_item {
+            &:not(:last-child) {
+                margin: {
+                    bottom: .5rem;
                 }
-                &_preview {
-                    display: none;
-                    @media screen and (min-width: 450px) {
-                        display: block;
-                        width: 25%;
-                    }
-                    &_image {
-                        display: block;
-                        width: 100%;
-                        transition: filter .2s ease;
-                        .#{$selector}_list_item_link:hover &, .#{$selector}_list_item_link:focus & {
-                            filter: grayscale(80%);
-                        }
-                    }
+            }
+            &_name {
+                color: $link-color;
+                text-decoration: underline;
+                &:hover, &:focus {
+                    color: $link-hover-color;
+                    text-decoration: none;
                 }
+                &:visited {
+                    color: $link-visited-color;
+                }
+            }
+            &_date {
+                color: $light-grey;
+                font-size: .8rem;
             }
         }
     }
