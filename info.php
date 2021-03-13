@@ -14,7 +14,7 @@
             I also love to try out new technologies, meet new people and share our thoughts.<br>
             Since 2018, I'm part of the <a class="s-info_description_link" href="https://jsconfbp.com/" target="_blank">JSConf Budapest</a> organizing team.
             and <a class="s-info_description_link" href="http://cssconfbp.rocks/" target="_blank">CSSConf Budapest</a><br><br>
-            My hobbies include drawing, watching TV series, playing video games, reading and <a href="https://schatten.hu/koken" target="_blank">taking photos</a>.<br><br>
+            My hobbies include drawing, watching TV series, playing video games, reading and <a class="s-info_description_link" href="https://schatten.hu/koken" target="_blank">taking photos</a>.<br><br>
             <strong class="s-info_description_highlight">We must never forget the main purpose of the world wide web.</strong>
         </p>
 
