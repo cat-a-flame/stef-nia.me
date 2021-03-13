@@ -25,7 +25,7 @@
     <meta name="twitter:description" content="Stefánia Péter's portfolio website">
     <meta name="twitter:image" content="/img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400i|Playfair+Display:400,700|Roboto+Condensed:400,700&amp;subset=latin-ext" rel="stylesheet"/>
-    <link rel="stylesheet" href="/dist/css/main.css" />
+    <link rel="stylesheet" href="/dist/css/main.css?v=1" />
     <script src="/dist/js/main.js"></script>
 </head>
 <body>
