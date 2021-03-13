@@ -12,9 +12,9 @@
             I'm a UX Engineer based in Budapest, Hungary, who fell in love with coding in 2004. My main interests are CSS, HTML and accessibility.
             Currently I work at <strong class="s-info_description_highlight">Oracle Hungary</strong> and on several side projects which interest me.
             I also love to try out new technologies, meet new people and share our thoughts.<br>
-            I'm also helping out at <a class="s-info_description_link" href="https://jsconfbp.com/" target="_blank">JSConf Budapest</a>
+            Since 2018, I'm part of the <a class="s-info_description_link" href="https://jsconfbp.com/" target="_blank">JSConf Budapest</a> organizing team.
             and <a class="s-info_description_link" href="http://cssconfbp.rocks/" target="_blank">CSSConf Budapest</a><br><br>
-            When I'm not digging into <del>buggy</del> code, I read, draw, watch TV series, play video games or work on side projects, because what I do for a living is also my hobby.<br><br>
+            My hobbies include drawing, watching TV series, playing video games, reading and <a href="https://schatten.hu/koken" target="_blank">taking photos</a>.<br><br>
             <strong class="s-info_description_highlight">We must never forget the main purpose of the world wide web.</strong>
         </p>
 
