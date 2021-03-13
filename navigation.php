@@ -2,16 +2,7 @@
     <nav class="navigation_wrapper">
         <ul class="navigation_wrapper_list" data-toggle="menu">
             <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link" href="#about">About</a>
-            </li>
-            <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link" href="#skills">Skills</a>
-            </li>
-            <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link" href="#projects">Experiences</a>
-            </li>
-            <li class="navigation_wrapper_list_item">
-                <a class="navigation_wrapper_list_item_link" href="/koken" rel="external" target="_blank">Photos<sup class="navigation_wrapper_list_item_link_heart">❤</sup></a>
+                <a class="navigation_wrapper_list_item_link" href="/koken" rel="external" target="_blank">My photos</a>
             </li>
         </ul>
         <button class="navigation_wrapper_button" type="button" data-toggle="navigation">

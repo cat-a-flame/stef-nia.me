@@ -126,16 +126,6 @@
                         color: $light-grey2;
                         outline: 1px dotted $light-grey2;
                     }
-                    &_heart {
-                        color: $link-color;
-                        font: {
-                            size: .7rem;
-                        }
-                        margin: {
-                            left: .2rem;
-                        }
-                        vertical-align: top;
-                    }
                 }
             }
         }
@@ -177,7 +167,6 @@
 .footer {
     padding: {
         bottom: 1rem;
-        top: 3rem;
     }
     @media screen and (min-width: 1024px) {
         text-align: right;
