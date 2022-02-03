@@ -26,11 +26,17 @@
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 2px 0 #ddd;
-    flex-basis: calc(100% / 2);
+    flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     padding: 1rem;
 }
+
+    @media screen and (min-width: 50rem) {
+        .project-entry {
+            flex-basis: calc(100% / 2);
+        }
+    }
 
 .project-entry-link {
     border-color: transparent;
