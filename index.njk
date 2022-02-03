@@ -14,7 +14,10 @@ pagination:
     {% for post in entries %}
   <li class="project-entry">
     <a href="{{ post.url }}" class="project-entry-link">
-      <img class="project-entry-image" src="{{ post.data.socialImage }}" alt="" />
+      <picture>
+        <source srcset="{{ post.data.socialImageWebP }}" type="image/webp">
+        <img src="{{ post.data.socialImage }}" alt="{{ post.data.pageTitle }}">
+      </picture>
       <span class="project-entry-title">{{ post.data.pageTitle }}</span>
     </a>
 

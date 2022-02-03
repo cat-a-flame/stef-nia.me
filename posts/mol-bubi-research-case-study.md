@@ -4,6 +4,7 @@ date: 2022-02-02T18:00:00
 pageTitle: 'Research case study: Mol Bubi'
 lead: "Mol Bubi is a bike-sharing system in Hungary. I have worked on this project as part of a course called MOME Insight."
 socialImage: /posts/images/molbubi/molbubi.jpg
+socialImageWebP: /posts/images/molbubi/molbubi.webp
 ---
 
 ## Context and background
@@ -37,7 +38,7 @@ We also checked how other sharing system, such as cars and scooters perform. Is 
 
 ## Research methodology
 We used several methodologies, such as desk research, user interview, survey, usability test and one-click test. To visualise the data, we used affinity diagrams and empathy maps.
-The results of the survey can be found <a href="/posts/images/molbubi/survey.pdf" target="_blank">here</a> (Hungarian only).
+<a href="/posts/images/molbubi/survey.pdf" target="_blank">The results of the survey can be found here</a> (Hungarian only).
 
 ## Recruitment criteria and process
 For this study, we were looking for a mixture of users and non-users. We did this because we wanted to make sure we got a comprehensive perspective of the service, and see how first-time users respond to the flow and experience. This helped us to ensure we weren’t just looking at power users who were "used to" the service.
@@ -60,11 +61,17 @@ We recorded every interview, and took notes. We have analysed these with the hel
 We put the facts on an empathy map, and used an affinity diagram too.
 <div class="project-image-wrapper">
     <figure>
-        <img src="/posts/images/molbubi/empathymap.jpg" alt="Picture of the empathy map">
+        <picture>
+            <source srcset="/posts/images/molbubi/empathymap.webp" type="image/webp">
+            <img src="/posts/images/molbubi/empathymap.jpg" alt="Picture of the empathy map">
+        </picture>
         <figcaption>Empathy map</figcaption>
     </figure>
     <figure>
-        <img src="/posts/images/molbubi/affinity.jpg" alt="Picture of the affinity diagram">
+        <picture>
+            <source srcset="/posts/images/molbubi/affinity.webp" type="image/webp">
+            <img src="/posts/images/molbubi/affinity.jpg" alt="Picture of the affinity diagram">
+        </picture>
         <figcaption>Affinity diagram</figcaption>
     </figure> 
 </div>

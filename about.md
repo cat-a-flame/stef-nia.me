@@ -29,5 +29,8 @@ layout: layouts/base.liquid
             <li>Art Instagram: <a href="https://www.instagram.com/sugarfunie/" target="_blank" rel="noopener" rel="external">@sugarfunie</a></li>
         </ul>
     </div>
-    <img class="subpage-image" src="/src/images/hiitsme.jpg" alt="Photo of Stefánia Péter" />
+    <picture>
+        <source srcset="/src/images/hiitsme.webp" type="image/webp">
+        <img class="subpage-image" src="/src/images/hiitsme.jpg" alt="Photo of Stefánia Péter" />
+    </picture>
 </div>

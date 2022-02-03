@@ -16,7 +16,11 @@
 
 .hero-area-link {
     border: 0 none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
+    width: 5rem;
 }
 
     .hero-area-link:hover .hero-area-image,
@@ -48,7 +52,6 @@
             font-size: 4rem;
         }
     }
-
 
 .hero-area-position {
     border-top: 1px solid var(--dark-grey);
