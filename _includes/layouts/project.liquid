@@ -2,14 +2,12 @@
 layout: layouts/base.liquid
 ---
 <article class="project-article">
-    <div class="project-article-meta">
-        Written by
-        <a href="https://twitter.com/cat_a_flame" target="_blank" rel="noopener">Stefanie</a>
-        at
-        <time datetime="{{ page.date }}">{{ page.date | date: "%Y %B %d." }}</time>
-    </div>
     <h1 class="project-article-title">{{ pageTitle }}</h1>
 
     {{ content }}
+
+    <div class="project-article-meta">
+        <time datetime="{{ page.date }}">{{ page.date | date: "%Y %B %d." }}</time>
+    </div>
 </article>
 

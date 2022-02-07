@@ -64,6 +64,10 @@ img {
     max-width: 100%;
 }
 
+figure {
+    margin-bottom: 2rem;
+}
+
 figcaption {
     font-size: .8rem;
     font-style: italic;
