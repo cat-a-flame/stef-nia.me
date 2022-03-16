@@ -22,7 +22,7 @@ layout: layouts/base.liquid
         </p>
         <p>You can find me on these sites as well:</p>
         <ul class="subpage-list">
-            <li>Github: <a href="https://github.com/Stefanye" target="_blank" rel="noopener" rel="external">@stefanye</a></li>
+            <li>Github: <a href="https://github.com/cat-a-flame" target="_blank" rel="noopener" rel="external">@cat-a-flame</a></li>
             <li>Linkedin: <a href="https://www.linkedin.com/in/stefaniapeter/" target="_blank" rel="noopener" rel="external">@stefaniapeter</a></li>
             <li>Twitter: <a href="https://twitter.com/cat_a_flame" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
             <li>Personal Instagram: <a href="https://www.instagram.com/cat_a_flame/" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
