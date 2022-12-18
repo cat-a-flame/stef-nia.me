@@ -25,12 +25,13 @@ layout: layouts/base.liquid
             <li>Github: <a href="https://github.com/cat-a-flame" target="_blank" rel="noopener" rel="external">@cat-a-flame</a></li>
             <li>Linkedin: <a href="https://www.linkedin.com/in/stefaniapeter/" target="_blank" rel="noopener" rel="external">@stefaniapeter</a></li>
             <li>Twitter: <a href="https://twitter.com/cat_a_flame" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
+            <li>Mastodon: <a href="https://front-end.social/@cat_a_flame" target="_blank" rel="noopener" rel="external">@cat_a_flame@front-end.social</a></li>
             <li>Personal Instagram: <a href="https://www.instagram.com/cat_a_flame/" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
             <li>Art Instagram: <a href="https://www.instagram.com/sugarfunie/" target="_blank" rel="noopener" rel="external">@sugarfunie</a></li>
         </ul>
     </div>
     <picture>
         <source srcset="/src/images/hiitsme.webp" type="image/webp">
-        <img class="subpage-image" src="/src/images/hiitsme.jpg" alt="Photo of Stefánia Péter" />
+        <img class="subpage-image" src="/src/images/hiitsme.jpg" alt="Stefánia Péter" />
     </picture>
 </div>
