@@ -11,13 +11,16 @@
         }
     }
 
-@media screen and (min-width: 50rem) {
-    .subpage-wrapper {
-        align-items: flex-start;
-        display: flex;
-        gap: 2rem;
-    }
+.subpage-wrapper {
+    margin-bottom: 1rem;
 }
+    @media screen and (min-width: 50rem) {
+        .subpage-wrapper {
+            align-items: flex-start;
+            display: flex;
+            gap: 2rem;
+        }
+    }
 
 .subpage-image {
     display: none;
