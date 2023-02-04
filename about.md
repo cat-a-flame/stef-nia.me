@@ -22,10 +22,10 @@ layout: layouts/base.liquid
     <p>My hobbies include drawing, playing video games, reading and <a href="https://schatten.hu/koken" target="_blank">taking photos</a>.</p>
     <p>You can find me on these sites as well:</p>
     <ul class="subpage-list">
-        <li>Github: <a href="https://github.com/cat-a-flame" target="_blank" rel="noopener" rel="external">@cat-a-flame</a></li>
-        <li>Linkedin: <a href="https://www.linkedin.com/in/stefaniapeter/" target="_blank" rel="noopener" rel="external">@stefaniapeter</a></li>
-        <li>Twitter: <a href="https://twitter.com/cat_a_flame" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
-        <li>Mastodon: <a href="https://front-end.social/@cat_a_flame" target="_blank" rel="noopener" rel="external" rel="me">@cat_a_flame@front-end.social</a></li>
-        <li>Personal Instagram: <a href="https://www.instagram.com/cat_a_flame/" target="_blank" rel="noopener" rel="external">@cat_a_flame</a></li>
-        <li>Art Instagram: <a href="https://www.instagram.com/sugarfunie/" target="_blank" rel="noopener" rel="external">@sugarfunie</a></li>
+        <li>Github: <a href="https://github.com/cat-a-flame" target="_blank" rel="noopener external">@cat-a-flame</a></li>
+        <li>Linkedin: <a href="https://www.linkedin.com/in/stefaniapeter/" target="_blank" rel="noopener external">@stefaniapeter</a></li>
+        <li>Twitter: <a href="https://twitter.com/cat_a_flame" target="_blank" rel="noopener external">@cat_a_flame</a></li>
+        <li>Mastodon: <a href="https://front-end.social/@cat_a_flame" target="_blank" rel="noopener external me">@cat_a_flame@front-end.social</a></li>
+        <li>Personal Instagram: <a href="https://www.instagram.com/cat_a_flame/" target="_blank" rel="noopener external">@cat_a_flame</a></li>
+        <li>Art Instagram: <a href="https://www.instagram.com/sugarfunie/" target="_blank" rel="noopener external">@sugarfunie</a></li>
     </ul>
