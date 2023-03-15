@@ -1,85 +1,81 @@
 /*** POST LIST ***/
 
-.project-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
+.post-title {
+    font-size: 2.5rem;
 }
 
-.project-list {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: nowrap;
+.post-list {
+    display: grid;
     gap: 2rem;
     list-style-type: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 1.875rem;
+    margin-bottom: 0;
     margin-left: 0;
 }
-    @media screen and (min-width: 50rem) {
-        .project-list {
-            margin-top: 2rem;
+    @media screen and (min-width: 40rem) and (max-width: 54rem) {
+        .post-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (min-width: 54rem) {
+        .post-list {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
-.project-entry {
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 2px 0 #ddd;
-    flex-basis: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    padding: 1rem;
+.post-entry {
+    margin: 0;
+    position: relative;
 }
 
-    @media screen and (min-width: 50rem) {
-        .project-entry {
-            display: flex;
-            flex-basis: calc(100% / 2);
-            flex-direction: column;
-        }
-    }
-
-.project-entry-link {
+.post-entry-link {
     border-color: transparent;
     display: block;
-    flex-grow: 0;
+    margin-bottom: 1rem;
 }
 
-    .project-entry-link:focus {
+    .post-entry-link:focus {
         border-color: transparent;
     }
-    .project-entry-link:focus .project-entry-title {
-        border-color:var(--link-hover-color);
+    .post-entry-link:focus .post-entry-title {
+        border-color: var(--link-hover-color);
     }
 
-.project-entry-image {
+.post-entry-image {
     display: block;
     max-width: 100%;
 }
 
-.project-entry-title {
-    border: 1px solid transparent;
+.post-entry-title {
+    color: #fff;
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
 }
 
-.project-entry-lead {
-    flex-grow: 1;
-    flex-shrink: 0;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.post-list-meta {
+    align-items: center;
+    display: flex;
+    font-size: .8rem;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.read-more-link {
-    flex-grow: 0;
+.post-entry-category {
+    background-color: rgba(3, 105, 127, .3);
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
     font-weight: 700;
+    padding: .2rem .5rem;
 }
 
 /* Project page */
 
-.project-article h2 {
+.post-article h2 {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.2;
