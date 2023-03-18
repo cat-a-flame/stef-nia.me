@@ -49,10 +49,14 @@
 .post-entry-title {
     color: #fff;
     font-family: 'Playfair Display', serif;
-    font-size: 26px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.2;
     text-decoration: none;
+}
+
+.post-lead {
+    margin-top: 1rem;
 }
 
 .post-list-meta {

@@ -80,21 +80,15 @@ pagination:
         <h3 class="fancy-title section-title">From My Journal</h3>
 
         <ol class="post-list" reversed>
-            {% for post in entries %}
+            {% for article in rss %}
                 <li class="post-entry">
-                    <a href="{{ post.url }}" class="post-entry-link">
-                        <picture>
-                            <source class="post-entry-image" srcset="{{ post.data.socialImageWebP }}" type="image/webp">
-                            <img class="post-entry-image" src="{{ post.data.socialImage }}" alt="{{ post.data.pageTitle }}">
-                        </picture>
-                    </a>
-
                     <div class="post-list-meta">
-                        <span class="post-entry-category">Case study</span>
-                        <time class="post-date" datetime="">2023 March 12.</time>
+                        <span class="post-entry-category">{{ article.category }}</span>
+                        <time class="post-date" datetime="{{ article.updated }}">{{ article.updated }}</time>
                     </div>
 
-                    <a class="post-entry-title" href="{{ post.url }}">{{ post.data.pageTitle }}</span></a>
+                    <a class="post-entry-title" href="{{ article.link }}">{{ article.title }}</span></a>
+                    <p class="post-lead">{{ article.lead }}</p>
                 </li>
             {% endfor %}
         </ol>

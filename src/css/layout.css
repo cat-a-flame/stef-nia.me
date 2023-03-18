@@ -44,6 +44,10 @@
         }
     }
 
+.hero-area-title .fancy-title {
+    white-space: nowrap;
+}
+
 .hero-area-image {
     display: block;
     flex-shrink: 0;
@@ -173,6 +177,12 @@
     height: 3.005rem;
     width: 2.75rem;
 }
+    @media screen and (max-width: 42rem) {
+        .site-header-image {
+            height: 2.4rem;
+            width: 2rem;
+        }
+    }
 
 /* About me */
 .about-me {
