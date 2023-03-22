@@ -1,0 +1,73 @@
+---
+baseURL: https://stef-nia.me
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Stefánia Péter :: UX Researcher &amp; UX Engineer</title>
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon.png">
+        <meta name="author" content="Stefánia Péter"/>
+        <meta name="description" content="Portfolio of Stefánia Péter"/>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@cat_a_flame">
+        <meta name="twitter:creator" content="@cat_a_flame">
+        <meta name="twitter:title" content="{% if lead %}{{pageTitle}}{%else%}Portfolio of Stefánia Péter{%endif%}">
+        <meta name="twitter:description" content="{% if lead %}{{lead}}{%else%}User Experience Engineer & Cat Lover{%endif%}">
+        <meta name="twitter:image" content="{{baseURL}}{% if socialImage %}{{socialImage}}{%else%}/src/images/social.png{%endif%}">
+
+        <!-- Open Graph -->
+        <meta property="og:title" content="{% if lead %}{{pageTitle}}{%else%}Portfolio of Stefánia Péter{%endif%}">
+        <meta property="og:description" content="{% if lead %}{{lead}}{%else%}User Experience Engineer & Cat Lover{%endif%}">
+        <meta property="og:image" content="{{baseURL}}{% if socialImage %}{{socialImage}}{%else%}/src/images/social.png{%endif%}">
+        <meta property="og:url" content="https://schatten.hu">
+        <meta property="og:site_name" content="Portfolio of Stefánia Péter">
+        <meta property="og:locale" content="en_GB">
+        <meta property="og:type" content="website">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMCHKKTHL5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-TMCHKKTHL5');
+        </script>
+
+        <script src="https://kit.fontawesome.com/cd9ec28620.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/src/css/resume.css">
+    </head>
+    <body>
+        <div class="layout h-resume">
+            {{ content }}
+
+            <aside class="sidebar">
+                <div class="container">
+                    <div class="actions">
+                        <a class="actions__btn" aria-label="Email" href="mailto:{{ author.email | obfuscate }}">
+                            <svg class="icon icon--email" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                        </a>
+                        <button class="actions__btn js-print utl-screen-only" aria-label="Print Résumé">
+                            <svg class="icon icon--print" role="img" aria-hidden="true" viewBox="0 0 24 24" id="icon-print" xmlns="http://www.w3.org/2000/svg"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <footer class="footer">
+                <div class="container utl-space-between">
+                    <p>&copy; {{ author.name }}</p>
+                    <p>Last updated: 2023 March 22.</p>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="{{ '/src/js/resume.js' | url }}"></script>
+    </body>
+</html>

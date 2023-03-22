@@ -5,10 +5,16 @@
     --link-color: #68d2d0;
     --link-hover-color: #7cf5f3;
     --link-visited-color: #64c7c6;
+    --content-width: 60rem;
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -18,7 +24,7 @@ body {
     background-size: 15px;
     color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
     @media screen and (max-width: 48rem) {
@@ -85,6 +91,5 @@ figure {
 }
 
 figcaption {
-    font-size: .8rem;
-    font-style: italic;
+    font-size: 1rem;
 }

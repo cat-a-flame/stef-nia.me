@@ -1,0 +1,27 @@
+<section class="journal-entries" id="journal">
+    <div class="journal-entries-wrapper">
+        <h3 class="fancy-title section-title">From My Journal</h3>
+
+        <ol class="journal-list" reversed>
+            {% for article in rss %}
+                {% if loop.index0 < 2 %}
+                    <li class="journal-entry">
+                        <div class="journal-list-meta">
+                            <span class="journal-entry-category">{{ article.category }}</span>
+                            <time class="journal-date" datetime="{{ article.updated }}">{{ article.updated }}</time>
+                        </div>
+
+                        <img src="{{ article.image }}" class="journal-image" alt="{{ article.title }}"/>
+
+                        <a class="journal-entry-title" href="{{ article.link }}">{{ article.title }}</span></a>
+                        <p class="journal-lead">{{ article.lead }}</p>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+
+        <div class="journal-entries-more">
+            <a href="https://journal.stef-nia.me" class="link-button">Read more entries</a>
+        </div>
+    </div>
+</section>

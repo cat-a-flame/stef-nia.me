@@ -1,0 +1,23 @@
+<section class="projects" id="projects">
+    <div class="projects-wrapper">
+        <h3 class="fancy-title section-title">Projects</h3>
+
+        <ol class="project-list" reversed>
+            {% for post in entries %}
+                <li class="project-entry">
+                    <a href="{{ post.url }}" class="project-entry-link">
+                        <picture>
+                            <img src="{{ post.data.socialImage }}" alt="{{ post.data.pageTitle }}">
+                        </picture>
+                    </a>
+
+                    <div class="project-content">
+                        <h4 class="project-title"><a href="{{ post.url }}" class="project-title-link">{{ post.data.pageTitle }}</a></h4>
+                        <p class="project-lead">{{ post.data.lead | safe }}</p>
+                        <a href="{{ post.url }}" class="link-button project-read-more">Read more</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

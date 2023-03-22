@@ -1,7 +1,7 @@
 const Parser = require("rss-parser");
 let parser = new Parser({
     customFields: {
-        item: ["date","updated", "lead", "lead", "category", "category"],
+        item: ["date","updated", "lead", "lead", "category", "category", "image", "image"],
       }
 });
 

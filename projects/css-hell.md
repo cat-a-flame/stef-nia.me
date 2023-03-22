@@ -2,14 +2,13 @@
 layout: layouts/project.liquid
 date: 2022-02-07T15:45:00
 pageTitle: 'CSS Hell'
-lead: "A collection of common CSS mistakes, and how to fix them."
-socialImage: /posts/images/csshell/csshell.jpg
-socialImageWebP: /posts/images/csshell/csshell.webp
+lead: "The site provides a comprehensive collection of common CSS mistakes, along with detailed explanations and step-by-step guides on how to fix them."
+socialImage: /src/images/projects/csshell.jpg
 ---
 
 [CSS Hell](https://csshell.dev/) is not an ordinary educational site. I try to help people understand CSS in a more entertaining, fun way because, in my belief, if something evokes emotion, we tend to memorise it better.
 I'm currently working as a web developer since 2010 but started this whole journey in 2003, so basically, the web, coding standards and frameworks evolved in front of my eyes. Safe to say, I saw a quiet few things.
-The most common recurring issues are usually related to HTML and CSS. The HTML part is covered by [Manuel Matuzović](https://twitter.com/mmatuzo) with [HTMHell](https://www.htmhell.dev/). After discussing my idea with him, I've created a similar project for CSS.
+The most common recurring issues are usually related to HTML and CSS. The HTML part is covered by [Manuel Matuzović](https://front-end.social/@matuzohttps://front-end.social/@matuzo) with [HTMHell](https://www.htmhell.dev/). After discussing my idea with him, I've created a similar project for CSS.
 
 All the examples found on the site are from live codebases in production. With this approach, I try to ensure that people can relate to these mistakes, and it's not just something I came up with.
 I pay attention to not to hurt anyone, so I usually rename the classes, use different units, to ensure that no one can identify who's code it was. We are all learning here, no one did anything wrong, it's just there are always better solutions that can help you improve and save time.
@@ -17,8 +16,8 @@ I pay attention to not to hurt anyone, so I usually rename the classes, use diff
 Every issue has a bad and a good example with a short explanation and resources to read more if you are interested.
 <figure>
     <picture>
-        <source srcset="/posts/images/csshell/post_example.webp" type="image/webp">
-        <img src="/posts/images/csshell/post_example.jpg" alt="Screenshot of a post on CSS Hell">
+        <source srcset="/projects/images/csshell/post_example.webp" type="image/webp">
+        <img src="/projects/images/csshell/post_example.jpg" alt="Screenshot of a post on CSS Hell">
     </picture>
     <figcaption>Screenshot of a post on CSS Hell</figcaption>
 </figure> 
@@ -32,4 +31,3 @@ The site is built with eleventy, and deployed by Netlify. I want to keep it as s
 - Wesbite: [csshell.dev](https://csshell.dev/)
 - GitHub: [github.com/Stefanye/CSSHell](https://github.com/Stefanye/CSSHell)
 - Twitter: [twitter.com/css_hell](https://twitter.com/css_hell)
-- 
