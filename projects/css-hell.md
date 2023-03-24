@@ -15,10 +15,7 @@ I pay attention to not to hurt anyone, so I usually rename the classes, use diff
 
 Every issue has a bad and a good example with a short explanation and resources to read more if you are interested.
 <figure>
-    <picture>
-        <source srcset="/projects/images/csshell/post_example.webp" type="image/webp">
-        <img src="/projects/images/csshell/post_example.jpg" alt="Screenshot of a post on CSS Hell">
-    </picture>
+    {% image "./images/csshell/post_example.jpg", "Example post from CSS Hell" %}
     <figcaption>Screenshot of a post on CSS Hell</figcaption>
 </figure> 
 

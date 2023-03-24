@@ -60,17 +60,11 @@ We recorded every interview, and took notes. We have analysed these with the hel
 We put the facts on an empathy map, and used an affinity diagram too.
 <div class="project-image-wrapper">
     <figure>
-        <picture>
-            <source srcset="/projects/images/molbubi/empathymap.webp" type="image/webp">
-            <img src="/projects/images/molbubi/empathymap.jpg" alt="Picture of the empathy map">
-        </picture>
+        {% image "./images/molbubi/empathymap.jpg", "Empathy map" %}
         <figcaption>Empathy map</figcaption>
     </figure>
     <figure>
-        <picture>
-            <source srcset="/projects/images/molbubi/affinity.webp" type="image/webp">
-            <img src="/projects/images/molbubi/affinity.jpg" alt="Picture of the affinity diagram">
-        </picture>
+        {% image "./images/molbubi/affinity.jpg", "Affinity diagram" %}
         <figcaption>Affinity diagram</figcaption>
     </figure> 
 </div>
