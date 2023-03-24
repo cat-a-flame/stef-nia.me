@@ -17,7 +17,7 @@ Every issue has a bad and a good example with a short explanation and resources 
 <figure>
     {% image "./images/csshell/post_example.jpg", "Example post from CSS Hell" %}
     <figcaption>Screenshot of a post on CSS Hell</figcaption>
-</figure> 
+</figure>
 
 Other people can also contribute to the project by fixing bugs, adding enhancements, or creating a new post. CSS Hell is open source and never going to have ads! I want to give something back to the community which helped me to learn and improve myself to advance my career.
 
