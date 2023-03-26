@@ -1,11 +1,12 @@
 :root {
-    --brand-color: #f6b000;
+    --brand-color: #4B1b00;
     --light-purple: #00222b;
     --dark-purple: #011c23;
-    --link-color: #68d2d0;
-    --link-hover-color: #7cf5f3;
-    --link-visited-color: #64c7c6;
+    --link-color: #60361F;
+    --link-hover-color: #4b2a18;
+    --link-visited-color: #4b2a18;
     --content-width: 60rem;
+    --secondary-font: "Fredericka the Great", cursive;
 }
 
 * {
@@ -14,17 +15,16 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 1rem;
 }
 
 body {
     background-attachment: fixed;
-    background-color: var(--light-purple);
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2067%2067%22%20style%3D%22enable-background%3Anew%200%200%2067%2067%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20style%3D%22opacity%3A.12%22%3E%3Cpath%20d%3D%22M3.8%201C5.9.9%206.9%201.7%207%203.6c.1%202.2-.7%203.2-2.5%203.4C2.1%207.2%201%206.3%201%204.1.9%202%201.8%201.1%203.8%201z%22%20style%3D%22fill%3A%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    background-size: 15px;
-    color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.25rem;
+    background-color: #fffafa;
+    background-image: url("/src/images/bg.png");
+    color: #343434;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
     @media screen and (max-width: 48rem) {
@@ -55,7 +55,7 @@ a {
     }
 
 p:not(:last-of-type) {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 ul {
@@ -74,8 +74,8 @@ ol {
 
     ul li,
     ol li {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
+        margin-top: .8rem;
+        margin-bottom: .8rem;
     }
 
 strong {

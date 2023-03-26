@@ -1,5 +1,4 @@
 .intro-content-wrapper {
-    background-color: var(--dark-purple);
     margin-left: auto;
     margin-right: auto;
     padding-right: 2rem;
@@ -13,34 +12,22 @@
             min-height: 100vh;
         }
     }
-
-.intro-wrapper {
-    padding-bottom: 12vw;
-    position: relative;
-}
-
-.intro-wrapper::after {
-    background-image: url("data:image/svg+xml,%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201185%20134.12%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23011c23%22%20d%3D%22M50.5%20133.62c112.4%200%2087.5-49%20188.7-59.3s146.7%2038.3%20219.5%2038.3%20107.55-3.7%20210.45-51.1c102.8-47.3%20274.35-56.9%20425.15%2021.1%2037.7%2019.5%2068%2036.7%2090.7%2051.5V-1.18H0v128c15%204.2%2031.6%206.8%2050.5%206.8z%22%2F%3E%3C%2Fsvg%3E");
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 12vw;
-    background-size: 100%;
-    background-repeat: repeat-x;
-    transform: translate(0, 0);
-}
-    @media (prefers-reduced-data: reduce) {
-        .intro-wrapper::after {
-            background-image: none;
+    @media screen and (max-width: 48rem) {
+        .intro-content-wrapper {
+            margin-bottom: 5rem;
+            margin-top: 2rem;
         }
     }
-
 
 .intro-title {
     font-size: 1.25rem;
     line-height: 1.3;
 }
+    @media screen and (max-width: 48rem) {
+        .intro-title {
+            font-size: 1rem;
+        }
+    }
 
 .intro-subtitle {
     font-size: 2.5rem;
@@ -48,7 +35,7 @@
 }
     @media screen and (max-width: 48rem) {
         .intro-subtitle {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -57,15 +44,15 @@
 }
 
 .intro-text {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    max-width: 70ch;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 65ch;
 }
 
 .intro-social {
     display: flex;
-    gap: 1.75rem;
-    font-size: 2rem;
+    gap: 1.5rem;
+    font-size: 1.8rem;
     list-style: none;
     margin: 0;
 }
@@ -84,53 +71,52 @@
 }
 .intro-social i {
     color: var(--brand-color);
-    transition: all .6s;
+    transition: transform .6s;
 }
     .intro-social a:hover i {
-        color: #ffc229;
-        transform: scale(1.3);
+        color: var(--link-hover-color);
+        transform: scale(1.2);
     }
 
-    .glitch {
-        color: transparent;
-        font-size: 0;
-    }
-    
-    .glitch::after {
-        animation: flicker 3s linear infinite, content 35s linear infinite;
-        animation-delay: 5s;
-        color: var(--brand-color);
-        content: "á";
-        display: inline-block;
-        font-size: 40px;
-        position: relative;
-        transform: skewX(0deg);
-        z-index: 1;
-    }
-        @media screen and (max-width: 48rem) {
-            .glitch::after {
-                font-size: 2rem;
-            }
-        }
-    
-     @keyframes content {
-        22% {
-            content: "�";
-        }
-        63% {
-            content: "¡";
-        }
-        69% {
-            content: "▯";
+.glitch {
+    color: transparent;
+    font-size: 0;
+}
+
+.glitch::after {
+    animation: flicker 3s linear infinite, content 35s linear infinite;
+    animation-delay: 5s;
+    color: var(--brand-color);
+    content: "á";
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    transform: skewX(0deg);
+    z-index: 1;
+}
+    @media screen and (max-width: 48rem) {
+        .glitch::after {
+            font-size: 1.5rem;
         }
     }
-    
-    @keyframes flicker {
-        0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
-            opacity: .99;
-        }
-        20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
-            opacity: 0.4;
-        }
+
+    @keyframes content {
+    22% {
+        content: "�";
     }
-    
+    63% {
+        content: "¡";
+    }
+    69% {
+        content: "▯";
+    }
+}
+
+@keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        opacity: .99;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+    }
+}
