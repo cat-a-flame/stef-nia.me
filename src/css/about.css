@@ -7,7 +7,7 @@
 }
 
 .about-me-text {
-    max-width: 65ch;
+    max-width: 58ch;
 }
 
 @media screen and (min-width: 48rem) {
@@ -19,7 +19,7 @@
 }
 
 .about-me-photo img {
-    box-shadow: 10px 10px 0px var(--dark-purple);
+    box-shadow: 10px 10px 0px #cec0bb;
     display: block;
 }
 

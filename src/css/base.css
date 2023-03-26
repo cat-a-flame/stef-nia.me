@@ -1,7 +1,5 @@
 :root {
-    --brand-color: #4B1b00;
-    --light-purple: #00222b;
-    --dark-purple: #011c23;
+    --brand-color: #4b1b00;
     --link-color: #60361F;
     --link-hover-color: #4b2a18;
     --link-visited-color: #4b2a18;
@@ -23,7 +21,7 @@ body {
     background-color: #fffafa;
     background-image: url("/src/images/bg.png");
     color: #343434;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 1.1rem;
     line-height: 1.5;
 }
