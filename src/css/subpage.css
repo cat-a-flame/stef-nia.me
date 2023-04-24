@@ -1,0 +1,53 @@
+.subpage {
+    max-width: 65rem;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+    @media screen and (min-width: 48rem) {
+        .subpage {
+            margin-top: 3rem;
+            padding-right: 3.75rem;
+            padding-left: 3.75rem;
+        }
+    }
+
+@media screen and (min-width: 48rem) {
+    .subpage-wrapper {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+    }
+}
+
+.subpage-title {
+    color: var(--brand-color);
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+    @media screen and (min-width: 50rem) {
+        .subpage-title {
+            font-size: 3rem;
+            line-height: 1.5;
+            margin-top: 0;
+        }
+    }
+
+.about-me-photo img {
+    box-shadow: 10px 10px 0px #cec0bb;
+    display: block;
+}
+
+@media screen and (max-width: 48rem) {
+    .about-me-photo {
+        display: none;
+    }
+}
+
+.subpage-text {
+    max-width: 58ch;
+}

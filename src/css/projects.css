@@ -1,11 +1,6 @@
 .projects {
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
 }
-    @media screen and (max-width: 48rem) {
-        .projects {
-            margin-bottom: 5rem;
-        }
-    }
 
 .projects-wrapper {
     margin-left: auto;
