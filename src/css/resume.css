@@ -117,10 +117,18 @@ h3 {
         }
     }
 
+h4 {
+    font-size: 1rem;
+}
+
+.subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .section {
     padding-top: 2rem;
     padding-bottom: 2rem;
-    page-break-inside: avoid;
 }
 
 /* Sidebar */
@@ -301,6 +309,10 @@ h3 {
     max-width: 60ch;
 }
 
+.entry__content p:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+
 .bulletlist {
     list-style: none;
     padding-left: 1.5em;
@@ -333,12 +345,12 @@ h3 {
 /* PRINT */
 
 @media print {
-    @page {
-        margin: 1cm 3cm;
-    }
-
     :root {
         --text-color: #000;
+    }
+
+    @page {
+        margin: 2cm;
     }
 
     html,
@@ -374,6 +386,11 @@ h3 {
         display: block;
     }
 
+    .lead,
+    .entry__content {
+        max-width: 80ch;
+    }
+
     .container {
         max-width: none !important;
         padding-left: 0;
@@ -396,6 +413,10 @@ h3 {
         border-color: #b5b5b5;
     }
 
+    .vcard {
+        padding-top: 0 !important;
+    }
+
     .vcard__avatar {
         position: static !important;
         transform: none !important;
@@ -413,7 +434,10 @@ h3 {
     }
 
     .entrylist::before,
-    .entrylist__item::before,
+    .entrylist__item::before {
+        content: none;
+    }
+
     .bulletlist li::before {
         color-adjust: exact !important;
         -webkit-print-color-adjust: exact !important;
@@ -422,5 +446,22 @@ h3 {
     .entrylist__item,
     .entry {
         page-break-inside: avoid;
+    }
+
+    .entrylist,
+    .entrylist__item {
+        padding-left: 0;
+    }
+
+    .section__intro {
+        padding-bottom: 0;
+    }
+
+    .section__title {
+        width: fit-content;
+    }
+
+    .footer {
+        display: none;
     }
 }
