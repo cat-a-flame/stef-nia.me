@@ -1,0 +1,88 @@
+---
+layout: layouts/project.liquid
+date: 2023-08-08T15:38:00
+pageTitle: 'Case study: internal ticketing system'
+lead: "Taking my first steps as a researcher at Oracle, I explored an internal ticketing system."
+socialImage: /src/images/projects/support.jpg
+---
+
+## Context
+In May 2022, one of our colleagues from a different organization approached my manager, expressing the need for a UX designer to redesign their outdated application, both in terms of design and infrastructure. The application in question is an internal tool utilized by our support team to manage and monitor requests created by the sales teams.
+
+## My role
+After completing a user experience researcher course offered by MOME, my manager recognized an excellent opportunity for me to apply my newly acquired skills. This project served as an ideal starting point for me to put my knowledge into practice.
+
+I had the responsibility of engaging with stakeholders, understanding both the business and user needs, conducting user interviews and usability tests, and creating a new design that aligned with our design system's guidelines. Initially, my manager provided guidance and feedback as a mentor to help me get started.
+
+## Timeline
+Since the application was an internal tool, there wasn't a strict deadline. However, I made every effort to complete it as soon as possible to facilitate the start of development and provide the best experience for our users.
+
+Initially, I had a discussion with a stakeholder to gather requirements. Their main objective was to create an efficient tool that would enhance the support team's work. Once I understood their needs, I scheduled calls with four individuals to gain insights into their goals, requirements, desires, and frustrations. Due to the time zone differences and varying shifts in India, it took approximately two weeks to find suitable times for our discussions.
+
+Developing the minimum viable product (MVP) design took me around a month, as I delved deeper into using Figma for the first time as a designer and not as a developer. I had to familiarize myself with its features and functions, while also ensuring that the design aligned with our design system's principles and guidelines.
+
+To ensure that my designs were user-friendly and facilitated daily tasks, I conducted usability tests. However, due to scheduling challenges, this process took approximately two weeks.
+
+## Research statement and goals
+To gain a deeper understanding of the tool and its daily usage, I began by examining the application on a test environment. By simulating the tasks that users typically perform, I gathered valuable insights that I aimed to emphasize during my interviews. One key insight that emerged was the significant amount of time required to complete tasks. The application appeared to be sluggish, and the workflow necessitated the use of additional tools.
+
+I was particularly interested in learning about specific aspects of the user interface (UI) that users frequently accessed or the functionalities they relied upon. Based on initial observations, it seemed that the filtering feature was outdated and no longer effective.
+
+## Research methodology
+Due to COVID restrictions and the geographical location of the users in India, I conducted both the discovery phase and usability testing remotely using Zoom for online interviews.
+
+During the discovery phase, I engaged in conversations with four users to gather valuable insights. In order to assess my performance and identify areas for improvement, my manager initially joined me to observe the interviews. For the subsequent interviews, I conducted them independently with the users, one-on-one.
+
+For the usability testing phase, I expanded the participant pool to five users. 
+
+## Recruitment criteria and process
+To recruit participants for the research, I reached out to the leader of the project. I specifically requested individuals who fell into a specific category: not super users, but also not new joiners. The goal was to engage participants who had prior knowledge and experience with the tool. By selecting participants who were familiar with the application, I aimed to address real issues and gain insights that would not be solely based on first-time understanding or learning.
+
+## Sample of questions and tasks
+
+### Discovery interviews
+In the discovery phase, I asked the users to share their screens and show me how they typically handle a task.
+Some of the questions I have asked:
+-	Can you please show me how you usually handle a task?
+    - When was the last time you used the search area?
+    - Which of the tabs do you use on a regular basis?
+-	These lists have many columns as I can see, which ones are useful for you? Are there any of those you never check?
+
+### Usability testing
+To test my designs, I created a prototype using Figma. I instructed the users to open the prototype and share their screens during the testing session. After giving them a few minutes to familiarize themselves with the UI, I asked them to complete a request as they would typically do.
+Some of the questions I have asked during the testing: 
+-	Which details are the most useful for you to start working?
+-	Is there anything missing, or blocking you from starting to work on the request?
+-	How easy was it to update the account’s details?
+-	Was there anything you didn’t like during the process? 
+-	Was there anything confusing, or misleading? 
+
+## Analysis and synthesis process
+
+### Discovery interviews
+To analyse the data I collected during the discovery phase, I used an affinity diagram. This method helped me organize the data by grouping common pain points, used functionalities, and UI elements together. By visually mapping out the connections and patterns in the data, I gained valuable insights.
+
+Based on this information, I created two personas. These personas represent typical users and provide a deeper understanding of their needs, goals, and behaviours. Developing personas allowed me to better empathize with the users and design solutions that meet their specific requirements.
+
+After analysing the data and synthesizing my research findings, I shared the results with the leader of the project. 
+
+### Usability testing
+To analyse the test results, I used an affinity diagram. Since this was my first design project, I recognized that there was room for improvement. I had to rethink certain aspects of the interface and button labels to make them more effective.
+
+After gathering the key insights from the tests, I sought feedback from my team, consisting of senior and principal UX designers. Their experience and expertise were invaluable in refining the designs. With their input, I made necessary adjustments to address the identified issues.
+
+## Next steps and recommendations
+During my research, I found that the application's performance was very poor, resulting in excessive time spent on tasks. Users had to switch between multiple tools, further increasing the time required to complete tasks and introducing the potential for errors.
+
+To improve the user experience, I recommended consolidating all necessary functionalities into a single application. This would eliminate the need for users to switch between tools, reducing load times and minimizing the risk of data transfer mistakes.
+
+Fixing the performance issues of the application was also crucial. Slow loading times and navigation problems, such as losing context and non-functional back buttons, frustrated users. It was important to address these issues to create a smoother and more user-friendly experience.
+
+Additionally, I suggested rethinking the filtering system. Currently, when users opened the application, they were presented with all tasks, regardless of their status or ownership. By displaying only relevant tasks, users could prioritize urgent matters more effectively and work more efficiently.
+
+## Reflections
+The project was deemed a success, despite not being developed due to resourcing constraints. The stakeholders were satisfied with the results, agreeing that a complete rewrite of the application was necessary, along with the implementation of our design system.
+
+I received valuable feedback from my manager regarding my interview scripts and the way I interacted with users, particularly in keeping them focused and on track during discussions.
+
+Looking back, if given the opportunity to start over, I would have recruited more participants to gather a more extensive dataset. Additionally, I realized that non-designers may not be familiar with interacting with a prototype, resulting in valuable time being spent on explaining its functionality and setting expectations. 
