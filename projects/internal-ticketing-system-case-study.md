@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.liquid
 date: 2023-08-08T15:38:00
-pageTitle: 'Case study: internal ticketing system'
+pageTitle: 'Research case study: internal ticketing system'
 lead: "Taking my first steps as a researcher at Oracle, I explored an internal ticketing system."
 socialImage: /src/images/projects/support.jpg
 ---
