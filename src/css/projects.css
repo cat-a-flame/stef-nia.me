@@ -61,6 +61,8 @@
 
 .project-title-link {
     color: var(--link-color);
+    display: inline-block;
+    max-width: 25ch;
     text-decoration: none;
 }
 
