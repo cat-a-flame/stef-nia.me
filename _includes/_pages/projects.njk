@@ -6,16 +6,17 @@
             {% for post in entries %}
                 <li class="project-entry">
                     <a href="{{ post.url }}" class="project-entry-link">
+                        <span class="project-category">{{ post.data.category }}</span>
+                        
                         <picture>
                             <img src="{{ post.data.socialImage }}" alt="{{ post.data.pageTitle }}">
                         </picture>
+                        
+                        <div class="project-content">
+                            <h4 class="project-title">{{ post.data.pageTitle }}</h4>
+                            <span class="project-read-more">View details</span>
+                        </div>
                     </a>
-
-                    <div class="project-content">
-                        <h4 class="project-title"><a href="{{ post.url }}" class="project-title-link">{{ post.data.pageTitle }}</a></h4>
-                        <p class="project-lead">{{ post.data.lead | safe }}</p>
-                        <a href="{{ post.url }}" class="link-button project-read-more">View project</a>
-                    </div>
                 </li>
             {% endfor %}
         </ol>

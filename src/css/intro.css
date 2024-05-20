@@ -1,9 +1,25 @@
 .intro-content-wrapper {
     margin-left: auto;
     margin-right: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &::after {
+        color: #805f4e;
+        content: "⮟";
+        position: absolute;
+        bottom: 2rem;
+        font-size: 2rem;
+        animation: bounce2 2s ease infinite;
+    }
 }
+
+@keyframes bounce2 {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
     @media screen and (min-width: 48rem) {
         .intro-content-wrapper {
             align-items: center;
@@ -16,6 +32,9 @@
         .intro-content-wrapper {
             margin-bottom: 5rem;
             margin-top: 2rem;
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -105,7 +124,8 @@
         content: "�";
     }
     63% {
-        content: "¡";
+        content: "Ã¡";
+        font-family: "Merriweather", serif;
     }
     69% {
         content: "▯";

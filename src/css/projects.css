@@ -6,84 +6,93 @@
     margin-left: auto;
     margin-right: auto;
     max-width: var(--content-width);
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.project-category {
+    background: #805f4e;
+    border-radius: 4px;
+    color: #fff;
+    font-size: .7rem;
+    padding: .3rem .5rem;
+    position: absolute;
+    right: .6rem;
+    top: .6rem;
+    z-index: 3;
 }
 
 .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     list-style: none;
     margin: 0;
 }
 
 .project-entry {
-    margin-top: 0;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .3);
+    margin: 0;
     position: relative;
-}
-    .project-entry:not(:last-child) {
-        margin-bottom: 8rem;
+    transition: all ease .3s;
+
+    &:hover, &:focus {
+        scale: 1.02;
     }
+
+    & picture {
+        display: block;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+    }
+}
+
     @media screen and (min-width: 48rem) {
         .project-entry {
-            align-items: center;
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            flex-basis: calc((100% / 2) - 1rem);
+            flex-grow: 0;
+            flex-shrink: 0;
         }
     }
 
-.project-content {
-    grid-area: 1 / 1 / -1 / 8;
-    position: relative;
+.project-read-more {
+    font-size: .8rem;
 }
 
-@media screen and (min-width: 48rem) {
-    .project-entry:nth-child(2n+1) .project-content {
-        grid-area: 1 / 1 / -1 / 7;
-        grid-column: 6 / -1;
-        text-align: end;
-    }
+.project-content {
+    padding: 1rem;
 }
 
 .project-entry-link {
     display: block;
-    grid-area: 1 / 7 / -1 / -1;
     text-decoration: none;
 }
-
-.project-entry:nth-child(2n+1) .project-entry-link {
-    grid-column: 1 / 7;
-  }
 
 .project-title {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height: 1.5;
     margin-bottom: 1rem;
-}
-
-.project-title-link {
-    color: var(--link-color);
-    display: inline-block;
-    max-width: 25ch;
-    text-decoration: none;
 }
 
 .project-entry-link img {
     filter: grayscale(80%);
     transition: all ease .3s;
 }
-    .project-entry-link img:hover {
+    .project-entry-link:hover img {
         filter: grayscale(0);
     }
 
-@media screen and (min-width: 48rem) {
-    .project-lead {
-        background-color: #cec0bb;
-        padding: 1.2rem 1.5rem;
-        text-wrap: balance;
-    }
-}
-
 .project-read-more {
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
     margin-top: 1.5rem;
+
+    &::after {
+        content: "→";
+        margin-left: 4px;
+    }
 }
 
 /* Article page */

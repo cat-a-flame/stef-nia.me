@@ -4,6 +4,7 @@ date: 2022-02-07T15:45:00
 pageTitle: 'CSS Hell'
 lead: "The site provides a comprehensive collection of common CSS mistakes, along with detailed explanations and step-by-step guides on how to fix them."
 socialImage: /src/images/projects/csshell.jpg
+category: Development
 ---
 
 [CSS Hell](https://csshell.dev/) is not an ordinary educational site. I try to help people understand CSS in a more entertaining, fun way because, in my belief, if something evokes emotion, we tend to memorise it better.

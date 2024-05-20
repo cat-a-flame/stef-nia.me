@@ -5,7 +5,7 @@ baseURL: https://stef-nia.me
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{% if lead %}{{pageTitle}}{%else%}Stefánia Péter :: UX &amp; Accessibility Advocate{%endif%}</title>
+        <title>{% if lead %}{{pageTitle}}{%else%}Stefánia Péter :: UX Designer{%endif%}</title>
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon.png">
@@ -17,12 +17,12 @@ baseURL: https://stef-nia.me
         <meta name="twitter:site" content="@cat_a_flame">
         <meta name="twitter:creator" content="@cat_a_flame">
         <meta name="twitter:title" content="{% if lead %}{{pageTitle}}{%else%}Portfolio of Stefánia Péter{%endif%}">
-        <meta name="twitter:description" content="{% if lead %}{{lead}}{%else%}UX &amp; Accessibility Advocate{%endif%}">
+        <meta name="twitter:description" content="{% if lead %}{{lead}}{%else%}UX Designer{%endif%}">
         <meta name="twitter:image" content="{{baseURL}}{% if socialImage %}{{socialImage}}{%else%}/src/images/social.png{%endif%}">
 
         <!-- Open Graph -->
         <meta property="og:title" content="{% if lead %}{{pageTitle}}{%else%}Portfolio of Stefánia Péter{%endif%}">
-        <meta property="og:description" content="{% if lead %}{{lead}}{%else%}UX &amp; Accessibility Advocate{%endif%}">
+        <meta property="og:description" content="{% if lead %}{{lead}}{%else%}UX Designer{%endif%}">
         <meta property="og:image" content="{{baseURL}}{% if socialImage %}{{socialImage}}{%else%}/src/images/social.png{%endif%}">
         <meta property="og:url" content="https://stef-nia.me">
         <meta property="og:site_name" content="Portfolio of Stefánia Péter">
@@ -56,11 +56,11 @@ baseURL: https://stef-nia.me
                         <li><a class="site-navigation-link" href="/">Home</a></li>
                         <li><a class="site-navigation-link" href="/about">About</a></li>
                         <li><a class="site-navigation-link" href="https://journal.stef-nia.me">Journal</a></li>
-                        <li><a class="site-navigation-link link-button" href="/resume" target="_blank">Resume</a></li>
+                        <li class="h-hide"><a class="site-navigation-link link-button" href="https://stefaniesparkles.art" target="_blank">My art portfolio</a></li>
                     </ul>
                 </nav>
                 
-                <a class="site-navigation-link art-link-button" href="https://stefaniesparkles.art" target="_blank">My art portfolio</a>
+                <a class="site-navigation-link art-link-button" href="/resume" target="_blank">Resume</a>
             </div>
         </header>
 

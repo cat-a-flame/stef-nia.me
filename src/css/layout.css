@@ -16,6 +16,7 @@
 
 .link-button {
     border: 1px solid var(--link-color);
+    border-radius: 4px;
     display: inline-block;
     font-size: 1rem;
     line-height: 2.5;
@@ -40,6 +41,7 @@
 
 .art-link-button {
     background-color: #805f4e;
+    border-radius: 4px;
     color: #fff;
     display: inline-block;
     font-size: 1rem;
@@ -102,8 +104,8 @@ hr {
     justify-content: space-between;
     max-width: var(--content-width);
     margin: 0 auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .site-navigation-list {
@@ -134,12 +136,18 @@ hr {
 
 /* Footer */
 .footer {
-    padding-top: 6rem;
+    padding-top: 2rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     text-align: center;
 }
+
+    @media screen and (min-width: 48rem) {
+        .footer {
+            padding-top: 6rem;
+        }
+    }
 
 .footer_container_text {
     font-size: 1rem;
