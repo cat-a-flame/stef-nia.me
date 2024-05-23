@@ -1,15 +1,28 @@
 ---
 layout: layouts/base.liquid
 ---
-<article class="project-article">
-    <h1 class="project-article-title">{{ pageTitle }}</h1>
+<div class="project-article">
+    <aside class="sidebar">
+        <div class="section-title">Chapters</div>
+        <ul class="chapters" id="chapterSidebar"></ul>
+    </aside>
 
-    <p>{{ lead  }}</p>
+    <article>
+        <h1 class="project-article-title">{{ pageTitle }}</h1>
 
-    {{ content }}
+        <div class="project-author">
+            <div class="avatar">
+                <img src="/src/images/cvphoto.jpg" alt="Photo of Stefánia Péter" />
+            </div>
 
-    <div class="project-article-meta">
-        <time datetime="{{ page.date }}">{{ page.date | date: "%Y %B %d." }}</time>
-    </div>
-</article>
+            <div>
+                <p class="name">Stefánia Péter</p>
+                <p class="date"><time datetime="{{ page.date }}">{{ page.date | date: "%Y %B %d." }}</time></p>
+            </div>
+        </div>
 
+        <p>{{ lead  }}</p>
+
+        {{ content }}
+    </article>
+</div>

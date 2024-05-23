@@ -1,89 +1,20 @@
-.fancy-title {
-    color: var(--brand-color);
-    font-family: var(--secondary-font);
-    text-transform: uppercase;
-}
-
 .section-title {
-    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
     margin-bottom: 1rem;
-}
-    @media screen and (max-width: 48rem) {
-        .section-title {
-            font-size: 1.7rem;
-        }
-    }
-
-.link-button {
-    border: 1px solid var(--link-color);
-    border-radius: 4px;
-    display: inline-block;
-    font-size: 1rem;
-    line-height: 2.5;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-decoration: none;
-    transition: all ease .3s;
-}
-    .link-button:hover,
-    .link-button:focus {
-        background-color: var(--link-color);
-        color: #fff;
-        text-decoration: none;
-    }
-    .link-button:active {
-        background-color: var(--link-hover-color);
-        border-color: var(--link-hover-color);
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-.art-link-button {
-    background-color: #805f4e;
-    border-radius: 4px;
-    color: #fff;
-    display: inline-block;
-    font-size: 1rem;
-    line-height: 2.5;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    &:hover,
-    &:focus {
-        background-color: #634739;
-        color: #fff;
-        text-decoration: none !important;
-    }
-
-    &:active {
-        background-color: #463329;
-    }
 }
 
 /* Divider */
 hr {
-    background-image: linear-gradient(90deg, rgba(74,26,0,0) 0%, rgba(74,26,0,1) 25%, rgba(74,26,0,1) 75%, rgba(74,26,0,0) 100%);
+    background: rgb(218,75,159);
+    background: linear-gradient(90deg, rgba(218,75,159,1) 0%, rgba(218,75,159,1) 33%, rgba(0,255,255,1) 33%, rgba(0,255,255,1) 66%, rgba(255,204,0,1) 66%, rgba(255,204,0,1) 100%); 
+    box-shadow: 0 0 5px #da4b9f;
     border: 0;
-    height: 1px;
+    height: 3px;
     margin: 3rem auto;
-    position: relative;
-    overflow: visible;
     width: 15rem;
 }
-    hr:before{
-        content: "";
-        width: 5px;
-        height: 5px;
-        background: var(--brand-color);
-        display: inline-block;
-        border: 2px solid var(--brand-color);
-        position: absolute;
-        top: -4px;
-        left: 50%;
-        margin: 0 0 0 -3px;
-        transform:rotate(45deg);
-    }
 
     @media screen and (min-width: 48rem) {
         hr {
@@ -94,23 +25,40 @@ hr {
 
 /* Header */
 .site-header {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
 }
+    @media screen and (max-width: 33rem) {
+        .site-header {
+            padding-top: 1rem;
+        }
+    }
 
 .site-header-wrapper {
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    max-width: var(--content-width);
-    margin: 0 auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    &.subpage {
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
+    @media screen and (max-width: 33rem) {
+        .site-header-wrapper {
+            justify-content: flex-start;
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
 
 .site-navigation-list {
     align-items: center;
     display: flex;
+    font-family: var(--secondary-font);
     gap: 2.5rem;
     list-style-type: none;
     margin: 0;
@@ -126,6 +74,7 @@ hr {
 }
 
 .site-navigation-link {
+    color: #fff;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -134,21 +83,30 @@ hr {
         text-decoration: underline;
     }
 
+    @media screen and (max-width: 33rem) {
+        .site-navigation-link {
+            font-size: .8rem;
+        }
+    }
+
 /* Footer */
 .footer {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     padding-left: 1rem;
-    text-align: center;
+    text-align: end;
 }
 
     @media screen and (min-width: 48rem) {
         .footer {
             padding-top: 6rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
     }
 
 .footer_container_text {
-    font-size: 1rem;
+    font-size: .8rem;
+    font-family: var(--secondary-font);
 }

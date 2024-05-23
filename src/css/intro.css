@@ -1,16 +1,23 @@
 .intro-content-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     padding-right: 1rem;
     padding-left: 1rem;
+    position: relative;
 
     &::after {
-        color: #805f4e;
+        color: #F452AF;
         content: "⮟";
         position: absolute;
         bottom: 2rem;
-        font-size: 2rem;
+        font-size: 3rem;
         animation: bounce2 2s ease infinite;
+        background: -webkit-linear-gradient(#FFCC00, #F452AF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -20,15 +27,12 @@
     60% {transform: translateY(-15px);}
 }
 
-    @media screen and (min-width: 48rem) {
+    @media screen and (min-width: 56rem) {
         .intro-content-wrapper {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
+            min-height: 97vh;
         }
     }
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: 56rem) {
         .intro-content-wrapper {
             margin-bottom: 5rem;
             margin-top: 2rem;
@@ -38,84 +42,129 @@
         }
     }
 
-.intro-title {
-    font-size: 1.25rem;
-    line-height: 1.3;
-}
-    @media screen and (max-width: 48rem) {
-        .intro-title {
-            font-size: 1rem;
-        }
-    }
-
 .intro-subtitle {
-    font-size: 2.5rem;
-    line-height: 1.3;
+    font-family: var(--secondary-font);
+    margin: 0 !important;
 }
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: 33rem) {
         .intro-subtitle {
-            font-size: 1.5rem;
+            font-size: .8rem;
         }
     }
 
-.intro-title .fancy-title {
-    white-space: nowrap;
+.fancy-title {
+    color: var(--secondary-color);
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 3rem;
+    line-height: 1;
 }
+    @media screen and (min-width: 33rem) and (max-width: 56rem) {
+        .fancy-title {
+            font-size: 4rem;
+        }
+    }
 
-.intro-text {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    max-width: 65ch;
+    @media screen and (min-width: 56rem) {
+        .fancy-title {
+            font-size: 6rem;
+        }
+    }
+
+.fancy-subtitle {
+    color: var(--tertiary-color);
+    font-family: "Yellowtail", cursive;
+    font-size: 3rem;
+    left: 75px;
+    position: relative;
+    top: -50px;
+    text-shadow: 1px 3px 0 #F9D0FF;
+    transform: rotate(-12deg);
+    z-index: 1;
+}
+    @media screen and (min-width: 33rem) and (max-width: 56rem) {
+        .fancy-subtitle {
+            font-size: 4rem;
+            left: 100px;
+            top: -70px;
+        }
+    }
+    @media screen and (min-width: 56rem) {
+        .fancy-subtitle {
+            font-size: 6rem;
+            left: 160px;
+            top: -100px;
+        }
+    }
+
+.intro-title .fancy-title, .fancy-subtitle {
+    white-space: nowrap;
 }
 
 .intro-social {
     display: flex;
-    gap: 1.5rem;
-    font-size: 1.8rem;
+    gap: 2rem;
+    font-size: 1.5rem;
     list-style: none;
     margin: 0;
-}
-    @media screen and (max-width: 48rem) {
-        .intro-social {
-            font-size: 1.5rem;
-        }
+
+    & li {
+        margin: 0;
     }
 
-.intro-social li {
-    margin: 0;
-}
+    & a {
+        color: var(--link-color);
+    }
 
-.intro-social a {
-    color: var(--brand-color);
+    & i {
+        color: var(--link-color);
+        transition: transform .6s;
+        text-shadow: 0 0 3px var(--link-color);
+    }
+        & a:hover i {
+            color: var(--link-hover-color);
+            text-shadow: 0 0 3px var(--link-hover-color);
+            transform: scale(1.2);
+        }
 }
-.intro-social i {
-    color: var(--brand-color);
-    transition: transform .6s;
-}
-    .intro-social a:hover i {
-        color: var(--link-hover-color);
-        transform: scale(1.2);
+    @media screen and (min-width: 56rem) {
+        .intro-social {
+            display: block;
+            margin: 0;
+            position: absolute;
+            right: 48px;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            & li:not(:last-of-type) {
+                margin-bottom: 1.2rem;
+            }
+        }
     }
 
 .glitch {
     color: transparent;
     font-size: 0;
+    
+        &::after {
+            animation: flicker 3s linear infinite, content 35s linear infinite;
+            animation-delay: 5s;
+            color: var(--secondary-color);
+            content: "á";
+            display: inline-block;
+            font-size: 3rem;
+            position: relative;
+            transform: skewX(0deg);
+            z-index: 1;
+        }
 }
-
-.glitch::after {
-    animation: flicker 3s linear infinite, content 35s linear infinite;
-    animation-delay: 5s;
-    color: var(--brand-color);
-    content: "á";
-    display: inline-block;
-    font-size: 40px;
-    position: relative;
-    transform: skewX(0deg);
-    z-index: 1;
-}
-    @media screen and (max-width: 48rem) {
+    @media screen and (min-width: 33rem) and (max-width: 56rem) {
         .glitch::after {
-            font-size: 1.5rem;
+            font-size: 4rem;
+        }
+    }
+    @media screen and (min-width: 56rem) {
+        .glitch::after {
+            font-size: 6rem;
         }
     }
 
@@ -125,7 +174,7 @@
     }
     63% {
         content: "Ã¡";
-        font-family: "Merriweather", serif;
+        font-family: sans-serif;
     }
     69% {
         content: "▯";

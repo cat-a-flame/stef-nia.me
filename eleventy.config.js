@@ -8,6 +8,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('projects/images');
 
+  eleventyConfig.addShortcode("bodyClass", function(pageUrl) {
+    return pageUrl === "/" ? "home" : "subpage";
+  });
+
   // Filters
   Object.keys(filters).forEach(filterName => {
     eleventyConfig.addFilter(filterName, filters[filterName])

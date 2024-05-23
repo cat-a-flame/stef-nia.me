@@ -33,7 +33,7 @@ baseURL: https://stef-nia.me
         <script src="https://kit.fontawesome.com/cd9ec28620.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Saira+Semi+Condensed:wght@400;500;600;700&family=Silkscreen:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMCHKKTHL5"></script>
@@ -47,8 +47,10 @@ baseURL: https://stef-nia.me
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5519548085198887" crossorigin="anonymous"></script>
         <meta name="google-adsense-account" content="ca-pub-5519548085198887">
+
+        <script src="/src/js/chapters.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="{% bodyClass page.url %}">
         <header class="site-header">
             <div class="site-header-wrapper">
                 <nav class="site-navigation" aria-label="Main Menu">
@@ -56,11 +58,9 @@ baseURL: https://stef-nia.me
                         <li><a class="site-navigation-link" href="/">Home</a></li>
                         <li><a class="site-navigation-link" href="/about">About</a></li>
                         <li><a class="site-navigation-link" href="https://journal.stef-nia.me">Journal</a></li>
-                        <li class="h-hide"><a class="site-navigation-link link-button" href="https://stefaniesparkles.art" target="_blank">My art portfolio</a></li>
+                        <li><a class="site-navigation-link" href="/resume" target="_blank">Resume</a></li>
                     </ul>
                 </nav>
-                
-                <a class="site-navigation-link art-link-button" href="/resume" target="_blank">Resume</a>
             </div>
         </header>
 

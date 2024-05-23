@@ -11,13 +11,14 @@
 }
 
 .project-category {
-    background: #805f4e;
+    background: #6A498C;
     border-radius: 4px;
     color: #fff;
     font-size: .7rem;
     padding: .3rem .5rem;
     position: absolute;
     right: .6rem;
+    text-transform: uppercase;
     top: .6rem;
     z-index: 3;
 }
@@ -31,9 +32,9 @@
 }
 
 .project-entry {
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 0 10px 0px rgba(0, 0, 0, .3);
+    background-color: #4C345E;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0 rgba(76, 52, 94, 0.8);
     margin: 0;
     position: relative;
     transition: all ease .3s;
@@ -44,7 +45,7 @@
 
     & picture {
         display: block;
-        border-radius: 6px 6px 0 0;
+        border-radius: 2px 2px 0 0;
         overflow: hidden;
     }
 }
@@ -57,12 +58,8 @@
         }
     }
 
-.project-read-more {
-    font-size: .8rem;
-}
-
 .project-content {
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 .project-entry-link {
@@ -71,12 +68,15 @@
 }
 
 .project-title {
+    color: #fff;
+    font-size: 1.35rem;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
 
 .project-entry-link img {
+    display: block;
     filter: grayscale(80%);
     transition: all ease .3s;
 }
@@ -86,8 +86,9 @@
 
 .project-read-more {
     border-bottom: 1px solid currentColor;
+    color: #fff;
     display: inline-block;
-    margin-top: 1.5rem;
+    font-size: 1rem;
 
     &::after {
         content: "→";
@@ -96,61 +97,102 @@
 }
 
 /* Article page */
+
 .project-article {
-    max-width: 65rem;
+    max-width: 64rem;
     margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
     padding-right: 2rem;
     padding-left: 2rem;
 }
-    @media screen and (min-width: 48rem) {
+    @media screen and (min-width: 56rem) {
         .project-article {
+            display: flex;
+            gap: 48px;
             margin-top: 3rem;
-            padding-right: 3.75rem;
-            padding-left: 3.75rem;
+
+            & aside {
+                flex-shrink: 0;
+                width: 270px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 56rem) {
+        .sidebar {
+            display: none;
         }
     }
 
 .project-article-title {
-    color: var(--brand-color);
-    font-size: 2.2rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 600;
     line-height: 1.2;
     margin-top: .5rem;
-    margin-bottom: 1rem;
 }
     @media screen and (min-width: 50rem) {
         .project-article-title {
-            font-size: 3rem;
-            line-height: 1.5;
+            font-size: 2.5rem;
             margin-top: 0;
         }
     }
 
+.project-author {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 2.5rem 0;
+
+    .avatar {
+        border-radius: 100px;
+        height: 50px;
+        overflow: hidden;
+        width: 50px;
+        & img {
+            display: block;
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .name {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .date {
+        font-size: .875rem;
+        margin: 0;
+    }
+}
+
 .project-article h2 {
-    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 1.2;
-    margin-bottom: .8rem;
+    margin-bottom: .5rem;
     margin-top: 1rem;
 }
     @media screen and (min-width: 50rem) {
         .project-article h2 {
-            font-size: 2rem;
-            line-height: 1.5;
-            margin-top: 2rem;
+            font-size: 1.5rem;
+            margin-top: 3rem;
         }
     }
 
 .project-article h3 {
-    color: #95491e;
     font-size: 1.2rem;
+    font-weight: 600;
     line-height: 1.2;
     margin-bottom: .8rem;
     margin-top: 1rem;
 }
     @media screen and (min-width: 50rem) {
         .project-article h3 {
-            font-size: 1.5rem;
             margin-top: 2rem;
         }
     }
@@ -174,12 +216,6 @@
 
 .project-article ol ol {
     list-style-type: lower-roman;
-}
-
-.project-article-meta {
-    font-size: .85rem;
-    margin-top: 2rem;
-    text-align: end;
 }
 
 .project-image-wrapper {
@@ -215,4 +251,13 @@
 .summary > h3:first-of-type,
 .summary > h4:first-of-type {
     margin-top: 0;
+}
+
+.chapters {
+    font-size: 1rem;
+    margin-bottom: 0;
+
+    & li::marker {
+        color: #fc0;
+    }
 }
