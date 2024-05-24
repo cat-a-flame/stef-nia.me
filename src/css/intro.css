@@ -14,10 +14,11 @@
         background: linear-gradient(#FFCC00, #F452AF);
         background-clip: text;
         color: #F452AF;
-        content: "⮟";
+        content: "▼";
         position: absolute;
-        bottom: 2rem;
-        font-size: 3rem;
+        bottom: 3rem;
+        font-size: 2rem;
+        text-shadow: 0 0 6px #f98d58;
         -webkit-text-fill-color: transparent;
     }
 }
