@@ -1,9 +1,9 @@
 ---
 layout: layouts/project.liquid
 date: 2024-04-18T10:41:00
-pageTitle: 'Heuristic Evaluation of Wallet by BudgetBakers'
+pageTitle: 'Heuristic Evaluation of Wallet, a budget tracking app'
 lead: "As part of my journey in the UX designer course offered by UXcel, I conducted a heuristic evaluation of the Wallet app."
-socialImage: /src/images/projects/csshell.jpg
+socialImage: /src/images/projects/wallet.jpg
 category: UX Design
 ---
 
