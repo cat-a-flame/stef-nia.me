@@ -10,14 +10,14 @@
     position: relative;
 
     &::after {
+        animation: bounce2 2s ease infinite;
+        background: linear-gradient(#FFCC00, #F452AF);
+        background-clip: text;
         color: #F452AF;
         content: "⮟";
         position: absolute;
         bottom: 2rem;
         font-size: 3rem;
-        animation: bounce2 2s ease infinite;
-        background: -webkit-linear-gradient(#FFCC00, #F452AF);
-        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
