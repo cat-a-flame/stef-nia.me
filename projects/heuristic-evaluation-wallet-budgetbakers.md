@@ -4,7 +4,7 @@ date: 2024-04-18T10:41:00
 pageTitle: 'Heuristic Evaluation of Wallet, a budget tracking app'
 lead: "As part of my journey in the UX designer course offered by UXcel, I conducted a heuristic evaluation of the Wallet app."
 socialImage: /src/images/projects/wallet.jpg
-category: UX Design
+category: UX research
 ---
 
 The [heuristic evaluation](https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/theory-heuristic-evaluations/) is a method aimed at evaluating the usability of an interface based on a set of principles created by Jakob Nielsen.

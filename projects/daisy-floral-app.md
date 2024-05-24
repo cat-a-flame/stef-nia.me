@@ -4,7 +4,7 @@ date: 2023-03-24T11:00:00
 pageTitle: 'Case study: Daisy - floral app'
 lead: "Daisy is a flower ordering application developed as part of a User Experience (UX) course offered by Google"
 socialImage: /src/images/projects/daisy.jpg
-category: UX Design
+category: UX design & research
 ---
 
 It's an incredible opportunity to learn from industry experts and gain new skills in creating intuitive and user-friendly products. In this article, I'm going to share my case study, which demonstrates how I applied the concepts I learned in the course to a real-world project.
