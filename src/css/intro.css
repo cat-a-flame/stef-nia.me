@@ -4,6 +4,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    min-height: 97vh;
     padding-right: 1rem;
     padding-left: 1rem;
     position: relative;
@@ -27,11 +28,6 @@
     60% {transform: translateY(-15px);}
 }
 
-    @media screen and (min-width: 56rem) {
-        .intro-content-wrapper {
-            min-height: 97vh;
-        }
-    }
     @media screen and (max-width: 56rem) {
         .intro-content-wrapper {
             margin-bottom: 5rem;
