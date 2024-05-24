@@ -141,6 +141,12 @@ h4 {
     text-align: right;
 }
 
+    @media (max-width: 939px) {
+        .actions {
+            display: none;
+        }
+    }
+
 @media (min-width: 940px) {
     .js-scrolled .actions {
         top: 220px;
