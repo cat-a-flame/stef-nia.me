@@ -26,6 +26,6 @@ Other people can also contribute to the project by fixing bugs, adding enhanceme
 The site is built with eleventy, and deployed by Netlify. I want to keep it as simple as possible because not every project requires the latest flashy new technology with overcomplicated methods. 
 
 ## Links
-- Wesbite: [csshell.dev](https://csshell.dev/)
-- GitHub: [github.com/Stefanye/CSSHell](https://github.com/Stefanye/CSSHell)
-- Twitter: [twitter.com/css_hell](https://twitter.com/css_hell)
+- Website: [csshell.dev](https://csshell.dev/)
+- GitHub: [github.com/cat-a-flame/CSSHell](https://github.com/cat-a-flame/CSSHell)
+- Twitter: [x.com/css_hell](https://twitter.com/css_hell)
