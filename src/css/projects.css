@@ -253,11 +253,20 @@
     margin-top: 0;
 }
 
+.sidebar .wrapper {
+    position: sticky;
+    top: 2rem;
+}
+
 .chapters {
     font-size: 1rem;
     margin-bottom: 0;
 
     & li::marker {
         color: #fc0;
+    }
+
+    & .active {
+        font-weight: 700;
     }
 }
