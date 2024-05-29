@@ -1,8 +1,8 @@
 ---
 layout: layouts/project.liquid
 date: 2024-05-24T16:51:00
-pageTitle: "UX evaluation of használtautók.hu's search functionality"
-lead: "The evaluation of használtautók.hu's search functionality examines the key issues affecting user experience in the site's search feature. This study provides actionable recommendations to enhance usability and improve overall user satisfaction."
+pageTitle: "UX evaluation of használtautó.hu's search functionality"
+lead: "The evaluation of használtautó.hu's search functionality examines the key issues affecting user experience in the site's search feature. This study provides actionable recommendations to enhance usability and improve overall user satisfaction."
 socialImage: /src/images/projects/hasznaltautohu.jpg
 category: UX design
 ---
@@ -10,7 +10,7 @@ category: UX design
 _The original study was written in Hungarian because the website and the company are Hungarian-based._
 
 ## Purpose of the project
-The aim of the project is to conduct an analysis and formulate recommendations related to the test task for the UI/UX designer position advertised by [használtautók.hu](https://www.hasznaltauto.hu/).
+The aim of the project is to conduct an analysis and formulate recommendations related to the test task for the UI/UX designer position advertised by [használtautó.hu](https://www.hasznaltauto.hu/).
 
 The main focus is on analyzing and evaluating the search functionality found on the website. As part of the task, I identified the current strengths and weaknesses of the search feature and provided suggestions to improve usability and user experience.
 
