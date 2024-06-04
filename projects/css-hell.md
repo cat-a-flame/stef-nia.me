@@ -1,10 +1,16 @@
 ---
 layout: layouts/project.liquid
-date: 2022-02-07T15:45:00
+date: 2022-02-02T15:45:00
+class: css
 pageTitle: 'CSS Hell'
 lead: "The site provides a comprehensive collection of common CSS mistakes, along with detailed explanations and step-by-step guides on how to fix them."
+previewImage: /src/images/projects/csshell.png
 socialImage: /src/images/projects/csshell.jpg
 category: Development
+achievements:
+    - Promoting CSS best practices
+    - Educating beginner and senior developers
+    - Contributing to the community
 ---
 
 [CSS Hell](https://csshell.dev/) is not an ordinary educational site. I try to help people understand CSS in a more entertaining, fun way because, in my belief, if something evokes emotion, we tend to memorise it better.

@@ -4,20 +4,24 @@
 
         <ol class="project-list" reversed>
             {% for post in entries %}
-                <li class="project-entry">
-                    <a href="{{ post.url }}" class="project-entry-link">
-                        <span class="project-category">{{ post.data.category }}</span>
-                        
-                        <picture>
-                            <img src="{{ post.data.socialImage }}" alt="{{ post.data.pageTitle }}">
-                        </picture>
-                        
-                        <div class="project-content">
-                            <h4 class="project-title">{{ post.data.pageTitle }}</h4>
-                            <span class="project-read-more">View details</span>
-                        </div>
-                    </a>
-                </li>
+            <li class="project-entry {{ post.data.class }}">
+                <div class="project-content">
+                    <h4 class="project-title">{{ post.data.pageTitle }}</h4>
+                    <p class="project-lead">{{ post.data.lead }}</p>
+
+                    <ul class="project-achievements">
+                        {% for achievement in post.data.achievements %}
+                            <li>{{ achievement }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <a href="{{ post.url }}" class="project-read-more">View details</a>
+                </div>
+
+                <picture class="project-preview">
+                    <img src="{{ post.data.previewImage }}" alt="{{ post.data.pageTitle }}">
+                </picture>
+            </li>
             {% endfor %}
         </ol>
     </div>

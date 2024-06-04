@@ -1,10 +1,15 @@
 ---
 layout: layouts/project.liquid
 date: 2024-05-24T16:51:00
+class: hahu
 pageTitle: "UX evaluation of használtautó.hu's search functionality"
 lead: "The evaluation of használtautó.hu's search functionality examines the key issues affecting user experience in the site's search feature. This study provides actionable recommendations to enhance usability and improve overall user satisfaction."
+previewImage: /src/images/projects/hahu.png
 socialImage: /src/images/projects/hasznaltautohu.jpg
 category: UX design
+achievements:
+    - "Provided clear, actionable UX recommendations"
+    - "Improved accessibility and usability of search options"
 ---
 
 _The original study was written in Hungarian because the website and the company are Hungarian-based._
