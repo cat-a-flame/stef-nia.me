@@ -3,7 +3,7 @@ layout: layouts/project.liquid
 date: 2023-08-25T10:00:00
 class: marketing
 pageTitle: "UX case study: enhancing the marketing event creation process"
-lead: "I was responsible for an internal CRM tool mainly used by marketing people, but there were several sales, and other users from different organisations as well. The number of active users was over 3000."
+lead: "I was responsible redesigning and enhancing the user experience of an internal CRM tool mainly used by marketing people, but there were several sales, and other users from different organisations as well. The number of active users was over 3000."
 previewImage: /src/images/projects/marketing.png
 socialImage: /src/images/projects/marketing.jpg
 category: UX design
