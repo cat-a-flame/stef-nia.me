@@ -4,7 +4,7 @@ date: 2024-05-05T10:00:00
 pageTitle: "UX audit: enhancing usability in a facility management application"
 lead: "Thoroughly examined its accessibility and usability, keeping the fundamentals of UX in mind. My evaluation identified key areas for improvement, aiming to enhance the overall user experience and functionality of the tool."
 previewImage: /src/images/projects/opteamus.png
-socialImage: /src/images/projects/marketing.jpg
+socialImage: /src/images/projects/opteamus.jpg
 achievements:
     - "Delivered a detailed report with examples"
     - "Provided clear, actionable recommendations"
