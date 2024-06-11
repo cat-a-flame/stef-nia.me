@@ -5,7 +5,6 @@ pageTitle: 'Case study: Daisy - floral app'
 lead: "As part of UX course offered by Google, I created a detailed case study about Daisy, a conceptual flower bouquet ordering app. Through ideation, prototyping, and user-centric design principles, I aimed to create a seamless and delightful flower purchasing experience for potential users."
 previewImage: /src/images/projects/daisy.png
 socialImage: /src/images/projects/daisy.jpg
-category: UX design & research
 achievements:
     - Gained proficiency in UX tools
     - Conducted numerous user interviews

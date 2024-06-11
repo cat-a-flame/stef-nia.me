@@ -1,12 +1,10 @@
 ---
 layout: layouts/project.liquid
 date: 2023-08-08T15:38:00
-class: ticketing
 pageTitle: 'Research case study: internal ticketing system'
 lead: "After finishing a research course, my first project at Oracle was to study our internal ticketing system. I wanted to find out what wasn't working well and how we could make it better for everyone using it."
 previewImage: /src/images/projects/support.png
 socialImage: /src/images/projects/support.jpg
-category: UX Research
 achievements:
     - "Task creation time reduced by 70%"
     - "Significantly improved the overall user experience"
