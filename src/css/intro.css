@@ -69,11 +69,11 @@
     color: var(--tertiary-color);
     font-family: "Yellowtail", cursive;
     font-size: 3rem;
-    left: 75px;
+    left: 20px;
     position: relative;
-    top: -50px;
+    top: -30px;
     text-shadow: 1px 3px 0 #F9D0FF;
-    transform: rotate(-12deg);
+    transform: rotate(-10deg);
     z-index: 1;
 }
     @media screen and (min-width: 33rem) and (max-width: 56rem) {
@@ -86,8 +86,8 @@
     @media screen and (min-width: 56rem) {
         .fancy-subtitle {
             font-size: 6rem;
-            left: 160px;
-            top: -100px;
+            left: 57px;
+            top: -85px;
         }
     }
 
